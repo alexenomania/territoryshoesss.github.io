@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Каталог - Территория Обуви</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<!-- Jquery -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.js"></script>
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+
+</head>
+
+<body class="iscatalog">
+	<!— Yandex.Metrika counter —> 
+	<script type="text/javascript" > 
+	(function (d, w, c) { 
+	(w[c] = w[c] || []).push(function() { 
+	try { 
+	w.yaCounter45596460 = new Ya.Metrika({ 
+	id:45596460, 
+	clickmap:true, 
+	trackLinks:true, 
+	accurateTrackBounce:true, 
+	webvisor:true 
+	}); 
+	} catch(e) { } 
+	}); 
+
+	var n = d.getElementsByTagName("script")[0], 
+	s = d.createElement("script"), 
+	f = function () { n.parentNode.insertBefore(s, n); }; 
+	s.type = "text/javascript"; 
+	s.async = true; 
+	s.src = "https://mc.yandex.ru/metrika/watch.js"; 
+
+	if (w.opera == "[object Opera]") { 
+	d.addEventListener("DOMContentLoaded", f, false); 
+	} else { f(); } 
+	})(document, window, "yandex_metrika_callbacks"); 
+	</script> 
+	<noscript><div><img src="https://mc.yandex.ru/watch/45596460" style="position:absolute; left:-9999px;" alt="" /></div></noscript> 
+	<!— /Yandex.Metrika counter —>
+	<div id="feedback" style="display:none">
+		<h4>Условия доставки</h4>
+		<p>По России, Казахстану, Украине и Беларуси отправляем нашими партнерами, либо любой транспортной компанией на ваш выбор.</p>
+		<p><strong>Россия:</strong></p>
+		<p>Головной склад находится в Москве, Екатеринбурге, Челябинске, Новосибирске.</p>
+		<p><span>6$</span> за 1кг. - Авиа <span>10-14</span> дней</p>
+		<p><span>8,5$</span> за 1кг. - Быстрый авиа <span>5-7</span> дней</p>
+		<p><span>3$</span> за 1кг. - Авто <span>18–24</span> дней</p>
+		<p><span>1-2$</span> за 1кг. - Море <span>от 45</span> дней</p>
+		<p><strong>Казахстан:</strong></p>
+		<p>Головной склад находится в г. Алматы.</p>
+		<p><span>3,5$</span> за 1кг. - Авто <span>9–14</span> дней</p>
+		<p><strong>Беларусь:</strong></p>
+		<p>Головного склада нет, отправляем из Москвы в г. Минск.</p>
+		<p><strong>Украина:</strong></p>
+		<p>Головной склад находится в г. Киев.</p>
+		<p><span>от 9$</span> за 1кг. - Авто <span>9–14</span> дней</p>
+		<p class="bottom_text b_t_top">Офис нашей компании находится в Китае, г. Гуанчжоу.</p>
+		<p class="bottom_text">Благодаря наличию собственного карго, у нас низкие цены доставки!</p>
+		<p class="bottom_text">Наша компания обеспечит для вас самые выгодные условия доставки, на всех этапах перевозки груза начиная с момента погрузки у поставщика в пункте «А» и заканчивая адресной доставкой в вашем городе в пункте «Б»</p>
+	</div>
+	<!— А это модал бокс, ёпте —>
+	<div class="preloader"><div class="pulse"></div></div>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="top-line-catalog">
+					<ul class="top-line-menu-catalog">
+						<li><a href="index.html">На главную</a></li>
+						<li><a href="" class="current">Каталог</a></li>
+						<li><a href="">Контакты</a></li>
+						<li><a href="#feedback" rel="nofollow" class="modalbox">Условия доставки</a></li>
+						<li><a href="">Заказать</a></li>
+					</ul>
+				</div>
+				<div class="top-banner">
+					<p class="text-banner-1">Только прямые поставки</p>
+					<span class="text-banner-1-s">по РФ и СНГ</span>
+					<p class="text-banner-2">Дешевле чем у конкурентов</p>
+					<span class="text-banner-2-s">До 30%</span>
+					<img class="banner-img"src="img/slipones-baner.png" alt="Территория Обуви Каталог">
+					<div class="logo logo-catalog"><img  src="img/logo-white.png" alt="Территория обуви"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<section class="s-catalog">
+		<div class="content-container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="menu-catalog">
+						<ul class="">
+							<li><a href="adidas.html">Adidas</a></li>
+							<li><a href="Nike.html">Nike</a></li>
+							<li><a href="New-Balance.html">New Balance</a></li>
+							<li><a href="Timberland.html">Timberland</a></li>
+							<li><a href="Asics.html">Asics</a></li>
+							<li><a href="">UGG</a></li>
+							<li><a href="" class="current">Under Armour</a></li>
+						</ul>
+					</div>
+					<div class="catalog-position">
+						<div class="section-galery fotorama" data-allowfullscreen="true" data-nav="thumbs" data-thumbwidth="64" data-thumbheight="64" data-width="300" data-height="200">
+							<img src="img/fotorama-img/Under Armour/UA Charged 24 on 7/1.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Charged 24 on 7/2.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Charged 24 on 7/3.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Charged 24 on 7/4.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Charged 24 on 7/5.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Charged 24 on 7/6.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Charged 24 on 7/7.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Charged 24 on 7/8.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Charged 24 on 7/9.jpg" alt="" >
+						</div>
+						<div class="position-text-color"><p>цветов: <span>9</span></p></div>
+						<div class="position-text-name"><p>Кроссовки <span>UA Charged 24 on 7</span></p></div>
+						<div class="position-text-cost"><p><span>2150</span>р.</p></div>
+						<button class="button">Заказать</button>
+					</div>
+					<div class="catalog-position">
+						<div class="section-galery fotorama" data-allowfullscreen="true" data-nav="thumbs" data-thumbwidth="64" data-thumbheight="64" data-width="300" data-height="200">
+							<img src="img/fotorama-img/Under Armour/UA Charged Phenom 2/1.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Charged Phenom 2/2.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Charged Phenom 2/3.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Charged Phenom 2/4.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Charged Phenom 2/5.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Charged Phenom 2/6.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Charged Phenom 2/7.jpg" alt="" >
+						</div>
+						<div class="position-text-color"><p>цветов: <span>7</span></p></div>
+						<div class="position-text-name"><p>Кроссовки <span>UA Charged Phenom 2</span></p></div>
+						<div class="position-text-cost"><p><span>2150	</span>р.</p></div>
+						<button class="button">Заказать</button>
+					</div>
+					<div class="catalog-position">
+						<div class="section-galery fotorama" data-allowfullscreen="true" data-nav="thumbs" data-thumbwidth="64" data-thumbheight="64" data-width="300" data-height="200">
+							<img src="img/fotorama-img/Under Armour/UA Charged Reckless/1.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Charged Reckless/2.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Charged Reckless/3.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Charged Reckless/4.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Charged Reckless/5.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Charged Reckless/6.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Charged Reckless/7.jpg" alt="" >
+						</div>
+						<div class="position-text-color"><p>цветов: <span>7</span></p></div>
+						<div class="position-text-name"><p>Кроссовки <span>UA Charged Reckless</span></p></div>
+						<div class="position-text-cost"><p><span>1850</span>р.</p></div>
+						<button class="button">Заказать</button>
+					</div>
+					<div class="catalog-position">
+						<div class="section-galery fotorama" data-allowfullscreen="true" data-nav="thumbs" data-thumbwidth="64" data-thumbheight="64" data-width="300" data-height="200">
+							<img src="img/fotorama-img/Under Armour/UA Charged Ultimate 2.0/1.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Charged Ultimate 2.0/2.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Charged Ultimate 2.0/3.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Charged Ultimate 2.0/4.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Charged Ultimate 2.0/5.jpg" alt="" >
+						</div>
+						<div class="position-text-color"><p>цветов: <span>5</span></p></div>
+						<div class="position-text-name"><p>Кроссовки <span>UA Charged Ultimate 2.0</span></p></div>
+						<div class="position-text-cost"><p><span>2150</span>р.</p></div>
+						<button class="button">Заказать</button>
+					</div>
+					<div class="catalog-position">
+						<div class="section-galery fotorama" data-allowfullscreen="true" data-nav="thumbs" data-thumbwidth="64" data-thumbheight="64" data-width="300" data-height="200">
+							<img src="img/fotorama-img/Under Armour/UA Curry 2 kid/1.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Curry 2 kid/2.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Curry 2 kid/3.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Curry 2 kid/4.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Curry 2 kid/5.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Curry 2 kid/6.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Curry 2 kid/7.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Curry 2 kid/8.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Curry 2 kid/9.jpg" alt="" >
+						</div>
+						<div class="position-text-color"><p>цветов: <span>28</span></p></div>
+						<div class="position-text-name"><p>Кроссовки <span>UA Curry 2 kid</span></p></div>
+						<div class="position-text-cost"><p><span>2250</span>р.</p></div>
+						<button class="button">Заказать</button>
+					</div>
+					<div class="catalog-position">
+						<div class="section-galery fotorama" data-allowfullscreen="true" data-nav="thumbs" data-thumbwidth="64" data-thumbheight="64" data-width="300" data-height="200">
+							<img src="img/fotorama-img/Under Armour/UA Curry 2 Low/1.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Curry 2 Low/2.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Curry 2 Low/3.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Curry 2 Low/4.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Curry 2 Low/5.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Curry 2 Low/6.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Curry 2 Low/7.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Curry 2 Low/8.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Curry 2 Low/9.jpg" alt="" >
+						</div>
+						<div class="position-text-color"><p>цветов: <span>10</span></p></div>
+						<div class="position-text-name"><p>Кроссовки <span>UA Curry 2 Low</span></p></div>
+						<div class="position-text-cost"><p><span>1850</span>р.</p></div>
+						<button class="button">Заказать</button>
+					</div>
+					<div class="catalog-position">
+						<div class="section-galery fotorama" data-allowfullscreen="true" data-nav="thumbs" data-thumbwidth="64" data-thumbheight="64" data-width="300" data-height="200">
+							<img src="img/fotorama-img/Under Armour/UA Curry 3/1.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Curry 3/2.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Curry 3/3.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Curry 3/4.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Curry 3/5.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Curry 3/6.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Curry 3/7.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Curry 3/8.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Curry 3/9.jpg" alt="" >
+						</div>
+						<div class="position-text-color"><p>цветов: <span>12</span></p></div>
+						<div class="position-text-name"><p>Кроссовки <span>UA Curry 3</span></p></div>
+						<div class="position-text-cost"><p><span>2250</span>р.</p></div>
+						<button class="button">Заказать</button>
+					</div>
+					<div class="catalog-position">
+						<div class="section-galery fotorama" data-allowfullscreen="true" data-nav="thumbs" data-thumbwidth="64" data-thumbheight="64" data-width="300" data-height="200">
+							<img src="img/fotorama-img/Under Armour/UA Curry One Away/1.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Curry One Away/2.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Curry One Away/3.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Curry One Away/4.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Curry One Away/5.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Curry One Away/6.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Curry One Away/7.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Curry One Away/8.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Curry One Away/9.jpg" alt="" >
+						</div>
+						<div class="position-text-color"><p>цветов: <span>17</span></p></div>
+						<div class="position-text-name"><p>Кроссовки <span>UA Curry One Away</span></p></div>
+						<div class="position-text-cost"><p><span>2250</span>р.</p></div>
+						<button class="button">Заказать</button>
+					</div>
+					<div class="catalog-position">
+						<div class="section-galery fotorama" data-allowfullscreen="true" data-nav="thumbs" data-thumbwidth="64" data-thumbheight="64" data-width="300" data-height="200">
+							<img src="img/fotorama-img/Under Armour/UA Curry One low/1.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Curry One low/2.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Curry One low/3.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Curry One low/4.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Curry One low/5.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Curry One low/6.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Curry One low/7.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Curry One low/8.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Curry One low/9.jpg" alt="" >
+						</div>
+						<div class="position-text-color"><p>цветов: <span>18</span></p></div>
+						<div class="position-text-name"><p>Кроссовки <span>UA Curry One low</span></p></div>
+						<div class="position-text-cost"><p><span>1950</span>р.</p></div>
+						<button class="button">Заказать</button>
+					</div>
+					<div class="catalog-position">
+						<div class="section-galery fotorama" data-allowfullscreen="true" data-nav="thumbs" data-thumbwidth="64" data-thumbheight="64" data-width="300" data-height="200">
+							<img src="img/fotorama-img/Under Armour/UA Gemini Rubber/1.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Gemini Rubber/2.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Gemini Rubber/3.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Gemini Rubber/4.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Gemini Rubber/5.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Gemini Rubber/6.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Gemini Rubber/7.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Gemini Rubber/8.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Gemini Rubber/9.jpg" alt="" >
+						</div>
+						<div class="position-text-color"><p>цветов: <span>9</span></p></div>
+						<div class="position-text-name"><p>Кроссовки <span>UA Gemini Rubber</span></p></div>
+						<div class="position-text-cost"><p><span>1850</span>р.</p></div>
+						<button class="button">Заказать</button>
+					</div>
+					<div class="catalog-position">
+						<div class="section-galery fotorama" data-allowfullscreen="true" data-nav="thumbs" data-thumbwidth="64" data-thumbheight="64" data-width="300" data-height="200">
+							<img src="img/fotorama-img/Under Armour/UA Scorpio Running/1.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Scorpio Running/2.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Scorpio Running/3.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Scorpio Running/4.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Scorpio Running/5.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Scorpio Running/6.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Scorpio Running/7.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Scorpio Running/8.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Scorpio Running/9.jpg" alt="" >
+						</div>
+						<div class="position-text-color"><p>цветов: <span>10</span></p></div>
+						<div class="position-text-name"><p>Кроссовки <span>UA Scorpio Running</span></p></div>
+						<div class="position-text-cost"><p><span>1850</span>р.</p></div>
+						<button class="button">Заказать</button>
+					</div>
+					<div class="catalog-position">
+						<div class="section-galery fotorama" data-allowfullscreen="true" data-nav="thumbs" data-thumbwidth="64" data-thumbheight="64" data-width="300" data-height="200">
+							<img src="img/fotorama-img/Under Armour/UA Scorpio Wooman/1.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Scorpio Wooman/2.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Scorpio Wooman/3.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Scorpio Wooman/4.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Scorpio Wooman/5.jpg" alt="" >
+						</div>
+						<div class="position-text-color"><p>цветов: <span>5</span></p></div>
+						<div class="position-text-name"><p>Кроссовки <span>UA Scorpio Wooman</span></p></div>
+						<div class="position-text-cost"><p><span>1850</span>р.</p></div>
+						<button class="button">Заказать</button>
+					</div>
+					<div class="catalog-position">
+						<div class="section-galery fotorama" data-allowfullscreen="true" data-nav="thumbs" data-thumbwidth="64" data-thumbheight="64" data-width="300" data-height="200">
+							<img src="img/fotorama-img/Under Armour/UA Slingride/1.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Slingride/2.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Slingride/3.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Slingride/4.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Slingride/5.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Slingride/6.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Slingride/7.jpg" alt="" >
+						</div>
+						<div class="position-text-color"><p>цветов: <span>7</span></p></div>
+						<div class="position-text-name"><p>Кроссовки <span>UA Slingride</span></p></div>
+						<div class="position-text-cost"><p><span>1950</span>р.</p></div>
+						<button class="button">Заказать</button>
+					</div>
+					<div class="catalog-position">
+						<div class="section-galery fotorama" data-allowfullscreen="true" data-nav="thumbs" data-thumbwidth="64" data-thumbheight="64" data-width="300" data-height="200">
+							<img src="img/fotorama-img/Under Armour/UA Speed Form/1.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Speed Form/2.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Speed Form/3.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Speed Form/4.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Speed Form/5.jpg" alt="" >
+						</div>
+						<div class="position-text-color"><p>цветов: <span>5</span></p></div>
+						<div class="position-text-name"><p>Кроссовки <span>UA Speed Form</span></p></div>
+						<div class="position-text-cost"><p><span>1950</span>р.</p></div>
+						<button class="button">Заказать</button>
+					</div>
+					<div class="catalog-position">
+						<div class="section-galery fotorama" data-allowfullscreen="true" data-nav="thumbs" data-thumbwidth="64" data-thumbheight="64" data-width="300" data-height="200">
+							<img src="img/fotorama-img/Under Armour/UA Speedform Apollo/1.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Speedform Apollo/2.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Speedform Apollo/3.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Speedform Apollo/4.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Speedform Apollo/5.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Speedform Apollo/6.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Speedform Apollo/7.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Speedform Apollo/8.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Speedform Apollo/9.jpg" alt="" >
+						</div>
+						<div class="position-text-color"><p>цветов: <span>11</span></p></div>
+						<div class="position-text-name"><p>Кроссовки <span>UA Speedform Apollo</span></p></div>
+						<div class="position-text-cost"><p><span>1950</span>р.</p></div>
+						<button class="button">Заказать</button>
+					</div>
+					<div class="catalog-position">
+						<div class="section-galery fotorama" data-allowfullscreen="true" data-nav="thumbs" data-thumbwidth="64" data-thumbheight="64" data-width="300" data-height="200">
+							<img src="img/fotorama-img/Under Armour/UA SPEEDFORM APOLLO GR 2/1.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA SPEEDFORM APOLLO GR 2/2.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA SPEEDFORM APOLLO GR 2/3.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA SPEEDFORM APOLLO GR 2/4.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA SPEEDFORM APOLLO GR 2/5.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA SPEEDFORM APOLLO GR 2/6.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA SPEEDFORM APOLLO GR 2/7.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA SPEEDFORM APOLLO GR 2/8.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA SPEEDFORM APOLLO GR 2/9.jpg" alt="" >
+						</div>
+						<div class="position-text-color"><p>цветов: <span>11</span></p></div>
+						<div class="position-text-name"><p>Кроссовки <span>UA Speedform Apollo GR 2</span></p></div>
+						<div class="position-text-cost"><p><span>1850</span>р.</p></div>
+						<button class="button">Заказать</button>
+					</div>
+					<div class="catalog-position">
+						<div class="section-galery fotorama" data-allowfullscreen="true" data-nav="thumbs" data-thumbwidth="64" data-thumbheight="64" data-width="300" data-height="200">
+							<img src="img/fotorama-img/Under Armour/UA Speedform Fortis/1.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Speedform Fortis/2.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Speedform Fortis/3.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Speedform Fortis/4.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Speedform Fortis/5.jpg" alt="" >
+						</div>
+						<div class="position-text-color"><p>цветов: <span>5</span></p></div>
+						<div class="position-text-name"><p>Кроссовки <span>UA Speedform Fortis</span></p></div>
+						<div class="position-text-cost"><p><span>1950</span>р.</p></div>
+						<button class="button">Заказать</button>
+					</div>
+					<div class="catalog-position">
+						<div class="section-galery fotorama" data-allowfullscreen="true" data-nav="thumbs" data-thumbwidth="64" data-thumbheight="64" data-width="300" data-height="200">
+							<img src="img/fotorama-img/Under Armour/UA Speedform Fortis 2/1.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Speedform Fortis 2/2.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Speedform Fortis 2/3.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Speedform Fortis 2/4.jpg" alt="" >
+						</div>
+						<div class="position-text-color"><p>цветов: <span>4</span></p></div>
+						<div class="position-text-name"><p>Кроссовки <span>UA Speedform Fortis 2</span></p></div>
+						<div class="position-text-cost"><p><span>1850</span>р.</p></div>
+						<button class="button">Заказать</button>
+					</div>
+					<div class="catalog-position">
+						<div class="section-galery fotorama" data-allowfullscreen="true" data-nav="thumbs" data-thumbwidth="64" data-thumbheight="64" data-width="300" data-height="200">
+							<img src="img/fotorama-img/Under Armour/UA SpeedForm Gemini/1.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA SpeedForm Gemini/2.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA SpeedForm Gemini/3.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA SpeedForm Gemini/4.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA SpeedForm Gemini/5.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA SpeedForm Gemini/6.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA SpeedForm Gemini/7.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA SpeedForm Gemini/8.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA SpeedForm Gemini/9.jpg" alt="" >
+						</div>
+						<div class="position-text-color"><p>цветов: <span>13</span></p></div>
+						<div class="position-text-name"><p>Кроссовки <span>UA SpeedForm Gemini</span></p></div>
+						<div class="position-text-cost"><p><span>1850</span>р.</p></div>
+						<button class="button">Заказать</button>
+					</div>
+					<div class="catalog-position">
+						<div class="section-galery fotorama" data-allowfullscreen="true" data-nav="thumbs" data-thumbwidth="64" data-thumbheight="64" data-width="300" data-height="200">
+							<img src="img/fotorama-img/Under Armour/UA Speedform Slingride/1.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Speedform Slingride/2.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Speedform Slingride/3.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Speedform Slingride/4.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Speedform Slingride/5.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Speedform Slingride/6.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Speedform Slingride/7.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Speedform Slingride/8.jpg" alt="" >
+						</div>
+						<div class="position-text-color"><p>цветов: <span>8</span></p></div>
+						<div class="position-text-name"><p>Кроссовки <span>UA Speedform Slingride</span></p></div>
+						<div class="position-text-cost"><p><span>1950</span>р.</p></div>
+						<button class="button">Заказать</button>
+					</div>
+					<div class="catalog-position">
+						<div class="section-galery fotorama" data-allowfullscreen="true" data-nav="thumbs" data-thumbwidth="64" data-thumbheight="64" data-width="300" data-height="200">
+							<img src="img/fotorama-img/Under Armour/UA Speedform Twist/1.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Speedform Twist/2.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Speedform Twist/3.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Speedform Twist/4.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Speedform Twist/5.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Speedform Twist/6.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Speedform Twist/7.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Speedform Twist/8.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Speedform Twist/9.jpg" alt="" >
+						</div>
+						<div class="position-text-color"><p>цветов: <span>9</span></p></div>
+						<div class="position-text-name"><p>Кроссовки <span>UA Speedform Twist</span></p></div>
+						<div class="position-text-cost"><p><span>1950</span>р.</p></div>
+						<button class="button">Заказать</button>
+					</div>
+					<div class="catalog-position">
+						<div class="section-galery fotorama" data-allowfullscreen="true" data-nav="thumbs" data-thumbwidth="64" data-thumbheight="64" data-width="300" data-height="200">
+							<img src="img/fotorama-img/Under Armour/UA Speedform Xc/1.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Speedform Xc/2.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Speedform Xc/3.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Speedform Xc/4.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Speedform Xc/5.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Speedform Xc/6.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Speedform Xc/7.jpg" alt="" >
+						</div>
+						<div class="position-text-color"><p>цветов: <span>7</span></p></div>
+						<div class="position-text-name"><p>Кроссовки <span>UA Speedform Xc</span></p></div>
+						<div class="position-text-cost"><p><span>1750</span>р.</p></div>
+						<button class="button">Заказать</button>
+					</div>
+					<div class="catalog-position">
+						<div class="section-galery fotorama" data-allowfullscreen="true" data-nav="thumbs" data-thumbwidth="64" data-thumbheight="64" data-width="300" data-height="200">
+							<img src="img/fotorama-img/Under Armour/UA Traning Shoes/1.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Traning Shoes/2.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Traning Shoes/3.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Traning Shoes/4.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Traning Shoes/5.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Traning Shoes/6.jpg" alt="" >
+						</div>
+						<div class="position-text-color"><p>цветов: <span>6</span></p></div>
+						<div class="position-text-name"><p>Кроссовки <span>UA Traning Shoes</span></p></div>
+						<div class="position-text-cost"><p><span>1900</span>р.</p></div>
+						<button class="button">Заказать</button>
+					</div>
+					<div class="catalog-position">
+						<div class="section-galery fotorama" data-allowfullscreen="true" data-nav="thumbs" data-thumbwidth="64" data-thumbheight="64" data-width="300" data-height="200">
+							<img src="img/fotorama-img/Under Armour/UA Verge Low/1.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Verge Low/2.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Verge Low/3.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Verge Low/4.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Verge Low/5.jpg" alt="" >
+							<img src="img/fotorama-img/Under Armour/UA Verge Low/6.jpg" alt="" >
+						</div>
+						<div class="position-text-color"><p>цветов: <span>6</span></p></div>
+						<div class="position-text-name"><p>Кроссовки <span>UA Verge Low</span></p></div>
+						<div class="position-text-cost"><p><span>2250</span>р.</p></div>
+						<button class="button">Заказать</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>

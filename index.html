@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Территория обуви</title>
+	<meta name="description" content="">	
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<!-- Jquery -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.js"></script>
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #131313; }</style>
+	
+</head>
+
+<body class="ishome">
+	<!— Yandex.Metrika counter —> 
+	<script type="text/javascript" > 
+	(function (d, w, c) { 
+	(w[c] = w[c] || []).push(function() { 
+	try { 
+	w.yaCounter45596460 = new Ya.Metrika({ 
+	id:45596460, 
+	clickmap:true, 
+	trackLinks:true, 
+	accurateTrackBounce:true, 
+	webvisor:true 
+	}); 
+	} catch(e) { } 
+	}); 
+
+	var n = d.getElementsByTagName("script")[0], 
+	s = d.createElement("script"), 
+	f = function () { n.parentNode.insertBefore(s, n); }; 
+	s.type = "text/javascript"; 
+	s.async = true; 
+	s.src = "https://mc.yandex.ru/metrika/watch.js"; 
+
+	if (w.opera == "[object Opera]") { 
+	d.addEventListener("DOMContentLoaded", f, false); 
+	} else { f(); } 
+	})(document, window, "yandex_metrika_callbacks"); 
+	</script> 
+	<noscript><div><img src="https://mc.yandex.ru/watch/45596460" style="position:absolute; left:-9999px;" alt="" /></div></noscript> 
+	<!— /Yandex.Metrika counter —>
+	<div class="preloader"><div class="pulse"></div></div>
+
+
+<!- УДАЛИТЬ ПОТОМ, ВМЕСТЕ СО СТИЛЯМИ, ИБО НАХУЙ НЕ НУЖНА! ->
+	<div id="fancy_cont" style="display:none">
+		<form class="callback" id="registrater-form4">
+			<div class="succ" id="thank_you">
+				<div class="sered">
+					<img src="img/check-mark-button.svg" alt="">
+					<div class="title-fancy">
+						<p>Спасибо!<br>Ваша заявка отправлена.<br>В ближайшее время мы с Вами свяжемся!</p>
+					</div>
+				</div>
+			</div>
+			<p class="title-fancy">Мы свяжемся с Вами в ближайшее время!</p>
+			<!-- Hidden Required Fields -->
+			<input type="hidden" name="project_name" value="Территория обуви">
+			<input type="hidden" name="admin_email" value="territoryshoes@gmail.com">
+			<input type="hidden" name="form_subject" value="Заявка с сайта Территория обуви">
+			<!-- END Hidden Required Fields -->
+			<input placeholder="Ваше имя" type="text" class="form-control" name="firstName">
+			<input placeholder="Номер телефона" type="tel" class="form-control" name="phone">
+			<input class="btn btn-primary" id="submit-button" type="submit" value="Sign Up">
+		</form>
+	</div>
+<!- УДАЛИТЬ ПОТОМ, ВМЕСТЕ СО СТИЛЯМИ, ИБО НАХУЙ НЕ НУЖНА! ->
+
+	<div id="feedback" style="display:none">
+		<h4>Условия доставки</h4>
+		<p>По России, Казахстану, Украине и Беларуси отправляем нашими партнерами, либо любой транспортной компанией на ваш выбор.</p>
+		<p><strong>Россия:</strong></p>
+		<p>Головной склад находится в Москве, Екатеринбурге, Челябинске, Новосибирске.</p>
+		<p><span>6$</span> за 1кг. - Авиа <span>10-14</span> дней</p>
+		<p><span>8,5$</span> за 1кг. - Быстрый авиа <span>5-7</span> дней</p>
+		<p><span>3$</span> за 1кг. - Авто <span>18–24</span> дней</p>
+		<p><span>1-2$</span> за 1кг. - Море <span>от 45</span> дней</p>
+		<p><strong>Казахстан:</strong></p>
+		<p>Головной склад находится в г. Алматы.</p>
+		<p><span>3,5$</span> за 1кг. - Авто <span>9–14</span> дней</p>
+		<p><strong>Беларусь:</strong></p>
+		<p>Головного склада нет, отправляем из Москвы в г. Минск.</p>
+		<p><strong>Украина:</strong></p>
+		<p>Головной склад находится в г. Киев.</p>
+		<p><span>от 9$</span> за 1кг. - Авто <span>9–14</span> дней</p>
+		<p class="bottom_text b_t_top">Офис нашей компании находится в Китае, г. Гуанчжоу.</p>
+		<p class="bottom_text">Благодаря наличию собственного карго, у нас низкие цены доставки!</p>
+		<p class="bottom_text">Наша компания обеспечит для вас самые выгодные условия доставки, на всех этапах перевозки груза начиная с момента погрузки у поставщика в пункте «А» и заканчивая адресной доставкой в вашем городе в пункте «Б»</p>
+	</div>
+
+		<div id="fancy_download" style="display:none">
+		<div class="callback">
+			<p class="title-fancy-red">Каталог</p>
+			<div class="container-choise">
+				<img src="img/cloud-computing.svg" alt="">
+				<a href="http://territoryshoes.ru/TerritoryShoes_Price.xlsx" download>
+				<button class="button fist_but">Скачать</button>
+				</a>
+			</div>
+			<div class="container-choise">
+				<img src="img/internet.svg" alt="">
+				<a target="_blank" href="https://docs.google.com/spreadsheets/d/19soys1lr3o98G5eYdppEW6B_NU_muM3GLVs0AqdPi84/edit#gid=279463458">
+				<button class="button sec_but">Посмотреть</button>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="obrat" id="katalog_and_email" style="display:none">
+		<form class="callback" id="registrater-form">
+			<div class="succ" id="thank_you">
+				<div class="sered">
+					<img src="img/check-mark-button.svg" alt="">
+					<div class="title-fancy">
+						<p>Спасибо!<br>Ваша заявка отправлена.<br>В ближайшее время мы с Вами свяжемся!</p>
+					</div>
+				</div>
+			</div>
+			<p class="title-fancy">Заполните ВСЕ поля и мы свяжемся с Вами в ближайшее время!</p>
+			<!-- Hidden Required Fields -->
+			<input type="hidden" name="project_name" value="Территория обуви">
+			<input type="hidden" name="admin_email" value="territoryshoes@gmail.com">
+			<input type="hidden" name="form_subject" value="Заявка с сайта Территория обуви">
+			<!-- END Hidden Required Fields -->
+			<input placeholder="Ваше имя" type="text" class="form-control" name="firstName">
+			<input class="form-control" placeholder="Электронная почта" type="email" name="email">
+			<input placeholder="Номер телефона" type="tel" class="form-control" name="phone">
+			<input class="btn btn-primary" id="submit-button" type="submit" value="Sign Up">
+
+		</form>
+	</div>
+
+	<div class="obrat" id="katalog_and_email_download" style="display:none">
+		<form class="callback" id="registrater-form3">
+			<div class="succ" id="thank_you">
+				<div class="sered">
+					<img src="img/check-mark-button.svg" alt="">
+					<div class="title-fancy">
+						<p>Спасибо!<br>Ваша заявка отправлена.<br>В ближайшее время мы с Вами свяжемся!</p>
+					</div>
+				</div>
+			</div>
+			<div class="succ" id="thank_you">
+				<div class="sered">
+					<img src="img/check-mark-button.svg" alt="">
+					<div class="title-fancy">
+						<p>Спасибо!<br>Ваша заявка отправлена.<br>В ближайшее время мы с Вами свяжемся!</p>
+					</div>
+				</div>
+			</div>
+			<p class="title-fancy">Заполните все поля и мы вышлем Вам каталог по почте в ближайшее время!</p>
+			<!-- Hidden Required Fields -->
+			<input type="hidden" name="project_name" value="Территория обуви">
+			<input type="hidden" name="admin_email" value="territoryshoes@gmail.com">
+			<input type="hidden" name="form_subject" value="Заявка с сайта Территория обуви">
+			<!-- END Hidden Required Fields -->
+			<input placeholder="Ваше имя" type="text" class="form-control" name="firstName">
+			<input class="form-control" placeholder="Электронная почта" type="email" name="email">
+			<input placeholder="Номер телефона" type="tel" class="form-control" name="phone">
+			<input class="btn btn-primary" id="submit-button" type="submit" value="Sign Up">
+
+		</form>
+	</div>
+
+	<div id="my-page">
+
+		<div id="my-header" class="my-header-class">
+			<header class="site-header" style="background-image: url(img/fon_header.jpg);">
+				<div class="header-flex">
+					<div class="flex-center">
+						<div class="container">
+							<div class="row">
+								<div class="col-sm-12">
+									<div class="top-line">
+										<a href="" class="logo"><img src="img/logo-white.png" alt="Территория обуви"></a>
+										<!--<i class="fa fa-check" aria-hidden="true"></i>-->
+										<div class="col-sm-9 header-container">
+											<nav class=" header-col">
+												<a href="#" data-scroll="hit">
+													<button class="button-href">Хиты продаж!</button>
+												</a>
+												<a href="#" data-scroll="contacts">
+													<button class="button-href">Контакты</button>
+												</a>
+											</nav>
+											<a href="#feedback" rel="nofollow" class="modalbox">
+												<button class="button-href">Условия доставки</button>
+											</a>
+											<a href="adidas.html">
+												<button class="button button-white">Каталог</button>
+											</a>
+										</div>
+										<div class="header-phone">
+											<a href="tel:+74952666714">+7(495) 266-67-14</a>
+										</div>
+									</div>
+										<div class="composition-title">
+											<h1 class="h1">оптовые поставки обуви напрямую от производителя по всей <strong>р</strong>оссии и <strong>снг</strong></h1>
+											<div class="p">
+												<p> Оставьте заявку прямо сейчас и получите полный каталог нашей продукции со специальными ценами!</p>
+											</div>
+											<form class="callback" id="registrater-form1" action="#" method="post">
+												<div class="succ" id="thank_you">
+													<div class="sered">
+														<img src="img/check-mark-button.svg" alt="">
+														<div class="title-fancy">
+															<p>Спасибо!<br>Ваша заявка отправлена.<br>В ближайшее время мы с Вами свяжемся!</p>
+														</div>
+													</div>
+												</div>
+												<div class="success-head"><span>Спасибо за заявку!</span></div>
+												<!-- Hidden Required Fields -->
+												<input type="hidden" name="project_name" value="Территория обуви">
+												<input type="hidden" name="admin_email" value="territoryshoes@gmail.com">
+												<input type="hidden" name="form_subject" value="Заявка с сайта Территория обуви">
+												<!-- END Hidden Required Fields -->
+												<input placeholder="Ваше имя" type="text" class="form-control" id="fio3" name="firstName">
+												<input class="form-control" id="fio4" placeholder="Электронная почта" type="email" name="email">
+												<input placeholder="Номер телефона" type="text" class="form-control" id="phone" name="phone" autocomplete="off">
+												<input class="btn btn-primary" id="f_send" type="submit" value="Sign Up">
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+		</div>
+
+		<div id="my-content">
+			<section class="s-privelege">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="privelege">
+								<div class="title-section">
+									<h3 class="h3">Наши преимущества</h3>
+									<p>Почему с нами работают?</p>
+								</div>
+								<div class="col-sm-12">
+									<div class="container_line_privelege">
+											<div class="priv_elem">
+												<div class="svgg"
+												 style="background: url(img/quality.svg)">
+												</div>
+													<p>Фабричное производство</p>
+											</div>
+											<div class="priv_elem">
+												<div class="svgg"
+												 style="background: url(img/sale.svg)">
+												</div>
+													<p>Накопительная система скидок для постоянных клиентов</p>
+											</div>
+											<div class="priv_elem">
+												<div class="svgg"
+												 style="background: url(img/price100.svg)">
+												</div>
+													<p>Наценка на одну пару от 100%</p>
+											</div>
+												<div class="priv_elem">
+													<div class="svgg"
+													 style="background: url(img/shoes24.svg)">
+													</div>
+														<p>Работаем при заказе от 24 пар обуви</p>
+												</div>
+												<div class="priv_elem">
+													<div class="svgg"
+													 style="background: url(img/bucket.svg)">
+													</div>
+														<p>Осуществляем возврат и замену брака</p>
+												</div>
+												<div class="priv_elem">
+													<div class="svgg"
+													 style="background: url(img/roading_car.svg)">
+													</div>
+														<p>Доставка от 2-3 дней по РФ и Казахстану</p>
+												</div>
+									</div>
+								</div>
+								<div class="wrap-button"><button  href="#katalog_and_email" rel="nofollow" class="button modalbox">Узнать подробнее!</button></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="quick_best" class="s-bestseller" data-anchor="hit">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="bestseller">
+								<div class="title-section">
+									<h3 class="h3">Наши <span>ХИТЫ</span> продаж!</h3>
+									<p>При покупке у нас, Вы получаете гарантию Качества</p>
+									<p>На нашей фабрике производят более <span>10 000</span> пар обуви в день.</p>
+								</div>
+								<div class="product-container">
+									<div class="product">
+										<div href="#katalog_and_email" rel="nofollow" class="product-image modalbox" style="background: url(img/Adidas_Tennis_Hu.jpg); background-position: center center; background-size: contain; background-repeat: no-repeat"></div>
+										<p class="product-name">Adidas Tennis Hu</p>
+										<div class="price-container">
+											<p class="text-price">Цена за пару:</p>
+											<p class="cost-price line-price"><span>1785</span> руб.</p>
+											<p class="cost-price"><span>1385</span> руб.</p>
+										</div>
+										<button href="#katalog_and_email" rel="nofollow" class="button button-black modalbox">Заказать!</button>
+									</div>
+									<div class="product phone-product">
+										<div href="#katalog_and_email" rel="nofollow" class="product-image modalbox" style="background: url(img/Nike_Sock_Dart.jpg); background-position: center center; background-size: contain; background-repeat: no-repeat"></div>
+										<p class="product-name">Nike Sock Dart</p>
+										<div class="price-container">
+											<p class="text-price">Цена за пару:</p>
+											<p class="cost-price line-price"><span>2115</span> руб.</p>
+											<p class="cost-price"><span>1715</span> руб.</p>
+										</div>
+										<button href="#katalog_and_email" rel="nofollow" class="button button-black modalbox">Заказать!</button>
+									</div>
+									<div class="product">
+										<div href="#katalog_and_email" rel="nofollow" class="product-image modalbox" style="background: url(img/Adidas_NMD.jpg); background-position: center center; background-size: contain; background-repeat: no-repeat"></div>
+										<p class="product-name">Adidas NMD</p>
+										<div class="price-container">
+											<p class="text-price">Цена за пару:</p>
+											<p class="cost-price line-price"><span>1790</span> руб.</p>
+											<p class="cost-price"><span>1395</span> руб.</p>
+										</div>
+										<button href="#katalog_and_email" rel="nofollow" class="button button-black modalbox">Заказать!</button>
+									</div>
+									<div id="quick_adidas" class="product phone-product">
+										<div href="#katalog_and_email" rel="nofollow" class="product-image modalbox" style="background: url(img/Adidas_Gazelle.jpg); background-position: center center; background-size: contain; background-repeat: no-repeat"></div>
+										<p class="product-name">Adidas Gazelle</p>
+										<div class="price-container">
+											<p class="text-price">Цена за пару:</p>
+											<p class="cost-price line-price"><span>1790</span> руб.</p>
+											<p class="cost-price"><span>1395</span> руб.</p>
+										</div>
+										<button href="#katalog_and_email" rel="nofollow" class="button button-black modalbox">Заказать!</button>
+									</div>
+									<div class="product">
+										<div href="#katalog_and_email" rel="nofollow" class="product-image modalbox" style="background: url(img/Adidas_Beckenbauer.jpg); background-position: center center; background-size: contain; background-repeat: no-repeat"></div>
+										<p class="product-name">Adidas Beckenbauer</p>
+										<div class="price-container">
+											<p class="text-price">Цена за пару:</p>
+											<p class="cost-price line-price"><span>1790</span> руб.</p>
+											<p class="cost-price"><span>1395</span> руб.</p>
+										</div>
+										<button href="#katalog_and_email" rel="nofollow" class="button button-black modalbox">Заказать!</button>
+									</div>
+									<div class="product">
+										<div href="#katalog_and_email" rel="nofollow" class="product-image modalbox" style="background: url(img/Nike_Air_Max.jpg); background-position: center center; background-size: contain; background-repeat: no-repeat"></div>
+										<p class="product-name">Nike Air Max</p>
+										<div class="price-container">
+											<p class="text-price">Цена за пару:</p>
+											<p class="cost-price line-price"><span>2115</span> руб.</p>
+											<p class="cost-price"><span>1715</span> руб.</p>
+										</div>
+										<button href="#katalog_and_email" rel="nofollow" class="button button-black modalbox">Заказать!</button>
+									</div>
+									<div class="product phone-product">
+										<div href="#katalog_and_email" rel="nofollow" class="product-image modalbox" style="background: url(img/Nike_Air_Huarache.jpg); background-position: center center; background-size: contain; background-repeat: no-repeat"></div>
+										<p class="product-name">Nike Air Huarache</p>
+										<div class="price-container">
+											<p class="text-price">Цена за пару:</p>
+											<p class="cost-price line-price"><span>1945</span> руб.</p>
+											<p class="cost-price"><span>1540</span> руб.</p>
+										</div>
+										<button href="#katalog_and_email" rel="nofollow" class="button button-black modalbox">Заказать!</button>
+									</div>
+									<div class="product phone-product">
+										<div href="#katalog_and_email" rel="nofollow" class="product-image modalbox" style="background: url(img/Adidas_EQT.jpg); background-position: center center; background-size: contain; background-repeat: no-repeat"></div>
+										<p class="product-name">Adidas EQT</p>
+										<div class="price-container">
+											<p class="text-price">Цена за пару:</p>
+											<p class="cost-price line-price"><span>1885</span> руб.</p>
+											<p class="cost-price"><span>1495</span> руб.</p>
+										</div>
+										<button href="#katalog_and_email" rel="nofollow" class="button button-black modalbox">Заказать!</button>
+									</div>
+									<div class="product">
+										<div href="#katalog_and_email" rel="nofollow" class="product-image modalbox" style="background: url(img/Nike_Air_Presto.jpg); background-position: center center; background-size: contain; background-repeat: no-repeat"></div>
+										<p class="product-name">Nike Air Presto</p>
+										<div class="price-container">
+											<p class="text-price">Цена за пару:</p>
+											<p class="cost-price line-price"><span>1890</span> руб.</p>
+											<p class="cost-price"><span>1495</span> руб.</p>
+										</div>
+										<button href="#katalog_and_email" rel="nofollow" class="button button-black modalbox">Заказать!</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>			
+			</section>
+
+			<section class="s-target-place" style="background-image: url(img/city2.jpg)">
+				<div class="black-bg">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+						<div class="title-section">
+							<h3 class="h3">Мы доставляем</h3>
+						</div>
+						<div class="target-place">
+							<div class="panel-group" id="collapse-group">
+								<div class="panel btn-group-vertical">
+									<button class="btn btn-lg btn-success disabled" id="btnn" data-toggle="collapse" data-parent="#collapse-group" href="#el1">Россия</button>
+									<button class="btn btn-lg btn-success" id="btnn" data-toggle="collapse" data-parent="#collapse-group" href="#el2">Казахстан</button>
+									<button class="btn btn-lg btn-success" id="btnn" data-toggle="collapse" data-parent="#collapse-group" href="#el3">Украина</button>
+									<button class="btn btn-lg btn-success" id="btnn" data-toggle="collapse" data-parent="#collapse-group" href="#el4">Беларусь</button>
+									<div id="el1" class="collapse in new-rule">
+										<div class="panel-body">
+											<p class="country">Россия</p>
+											<p><strong>Авиа</strong></p>	
+											<p><span>6$</span> за 1кг. - <span>10-14</span> дней</p>
+											<p><strong>Быстрый авиа</strong></p>
+											<p><span>8,5$</span> за 1кг. - <span>5-7</span> дней</p>
+											<p><strong>Авто</strong></p>
+											<p><span>3$</span> за 1кг. - <span>18–24</span> дней</p>
+											<p><strong>Море</strong></p>
+											<p><span>1-2$</span> за 1кг. - <span>от 45</span> дней</p>
+										</div>
+									</div>
+									<div id="el2" class="collapse new-rule" aria-expanded="false">
+										<div class="panel-body">
+											<p class="country">Казахстан</p>
+											<p><strong>Авто</strong></p>	
+											<p><span>3,5$</span> за 1кг. - <span>9–14</span> дней</p>
+										</div>
+									</div>
+									<div id="el3" class="collapse new-rule">
+										<div class="panel-body">
+											<p class="country">Украина</p>
+											<p><strong>Авто</strong></p>
+											<p><span>от 9$</span> за 1кг. - <span>9–14</span> дней</p>
+										</div>
+									</div>
+									<div id="el4" class="collapse new-rule">
+										<div class="panel-body">
+											<p class="country">Беларусь</p>
+											<p><strong>Авиа</strong></p>
+											<p><span>6$</span> за 1кг. - <span>10-14</span> дней</p>
+										</div>
+									</div>
+								</div>
+							</div>
+					</div>
+					</div>
+				</div>
+				</div>
+			</section>
+
+			<section class="s-partners section-overlay">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="parthners-logo">
+								<div class="line-logo">
+									<div class="image-box" style="background-image: url(img/adidas.jpg)"></div>
+									<div class="image-box" style="background-image: url(img/nike.jpg)"></div>
+									<div class="image-box" style="background-image: url(img/reebok.png)"></div>
+									<div class="image-box image-box-phone" style="background-image: url(img/new-balance.jpg)"></div>
+									<div class="image-box image-box-phone" style="background-image: url(img/jordan.jpg)"></div>
+								</div>
+								<div class="line-logo image-box-phone">
+									<div class="image-box" style="background-image: url(img/yvessaintlaurent.jpg)"></div>
+									<div class="image-box" style="background-image: url(img/giorgio_armani.jpg)"></div>
+									<div class="image-box" style="background-image: url(img/puma.jpg)"></div>
+									<div class="image-box" style="background-image: url(img/gucci.jpg)"></div>
+									<div class="image-box" style="background-image: url(img/kenzo.jpg)"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="s-h-we-wk" style=" background: url(img/fura.jpg);background-size: cover; background-position: center">
+							<div class="h-we-wk">
+								<div class="title-section">
+									<h3 class="h3" style="color: #fff">Как мы работаем <span>с клиентами</span></h3>
+								</div>
+								<div class="h-we-wk-row">
+									<div class="contain-h-we-wk displ">
+										<p class="number-container">1</p>
+										<div class="img-cont"><img src="img/document.svg" alt=""></div>
+										<div class="h-we-wk-text">
+											<p><strong>Вы</strong> оставляете заявку</p>
+										</div>
+									</div>
+									<div class="contain-h-we-wk displ">
+										<p class="number-container">2</p>
+										<div class="img-cont"><img src="img/smartphone.svg" alt=""></div>
+										<div class="h-we-wk-text">
+											<p>Мы связываемся с Вами</p>
+										</div>
+									</div>
+									<div class="contain-h-we-wk displ">
+										<p class="number-container">3</p>
+										<div class="img-cont"><img src="img/file-search.svg" alt=""></div>
+										<div class="h-we-wk-text">
+											<p class="only_marg">Уточняем детали</p>
+										</div>
+									</div>
+									<div class="contain-h-we-wk displ">
+										<p class="number-container">4</p>
+										<div class="img-cont"><img src="img/land-and-aerial.svg" alt=""></div>
+										<div class="h-we-wk-text">
+											<p>Транспорт на Ваш выбор</p>
+										</div>
+									</div>
+									<div class="contain-h-we-wk displ">
+										<p class="number-container">5</p>
+										<div class="img-cont"><img src="img/delivery-truck.svg" alt=""></div>
+										<div class="h-we-wk-text">
+											<p>Мы отправляем товар</p>
+										</div>
+									</div>
+									
+									<div class="contain-h-we-wk displ">
+										<p class="number-container">6</p>
+										<div class="img-cont"><img src="img/box.svg" alt=""></div>
+										<div class="h-we-wk-text">
+											<p>&nbsp<strong>Вы</strong> получаете заказ&nbsp</p>
+										</div>
+									</div>
+								</div>
+								<div class="dop-detail">
+									<a href="#feedback" rel="nofollow" class="modalbox">
+										<button class="button">Доп. информация по доставке</button>
+									</a>
+								</div>
+							</div>
+			</section>
+
+			<section class="s-differences">
+				<div class="container">
+					<div class="row">
+						<div class="difference">
+							<div class="col-md-6">
+								<p class="left_good dif-zag">Как работаем мы</p>
+								<ul class="ul-left ul-start">
+									<li>Только прямые поставки от Фабрики изготовителя <i class="fa fa-chevron-right"></i></li>
+									<li>Работаем как с физ. лицами, так и с юр. лицами <i class="fa fa-chevron-right"></i></li>
+									<li>Работаем всего от <span>24</span> пар обуви <i class="fa fa-chevron-right"></i></li>
+									<li>Накопительная система скидок для клиентов <i class="fa fa-chevron-right"></i></li>
+									<li>Только новейшие модели <i class="fa fa-chevron-right"></i></li>
+									<li>Осуществляем возврат и замену брака <i class="fa fa-chevron-right"></i></li>
+									<li>Контроль качества отгружаемого товара <i class="fa fa-chevron-right"></i></li>
+								</ul>
+							</div>
+							<div class="col-md-6">
+								<p class="right_bed dif-zag">Как работают другие</p>
+								<ul class="ul-right ul-start">
+									<li><i class="fa fa-chevron-left"></i> Являются перекупщиками, не работают напрямую</li>
+									<li><i class="fa fa-chevron-left"></i> Работают только по безналичному расчету</li>
+									<li><i class="fa fa-chevron-left"></i> Работают с поставками от <span>48</span> пар обуви</li>
+									<li><i class="fa fa-chevron-left"></i> Отсутствие скидок при работе на постоянной основе</li>
+									<li><i class="fa fa-chevron-left"></i> Старые модели</li>
+									<li><i class="fa fa-chevron-left"></i> Поставщики не несут ответственности за товар</li>
+									<li><i class="fa fa-chevron-left"></i> Коробки с обувью не проверяются</li>
+								</ul>
+							</div>
+							<div class="vertical-line"></div>
+							<div class="col-sm-12" style="display: none">
+								<button href="#katalog_and_email" rel="nofollow" class="button modalbox">Оставить заявку!</button>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</section>
+
+			<section class="s-ansver-partners" style="background-image: url(img/background_ansvers.jpg);">
+				<div class="change-bg">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="col-sm-9">
+									<div class="title-section">
+										<h3 class="h3">Отзывы наших клиентов</h3>
+									</div>
+									<div class="owl-carousel reviews">
+										<div class="review">
+											<img src="img/gleb.jpg" alt="">
+											<p class="review-header">Игорь Миллер</p>
+											<p class="review-header">Челябинск</p>
+											<p class="review-text">Я раньше ездил самостоятельно на крытые рынки и часами выбирал обувь, приходилось брать у разных поставщиков, т.к. в одном месте интересующего товара не хватало. А тут нашел этот магазин в интернете, решил попробовать. Удивил ассортимент, в нем представлены все актуальные модели, менеджер подсказал, на что стоит акцентировать внимание! Заказал <span>9</span> коробок с кроссовками, соотношение цены и качества обуви на высоком уровне, И достаточно быстро. На первой неделе было продано <span>23</span> пары обуви! Теперь жду нового поступления! Хочу сказать, что теперь у меня есть надежный поставщик!!</p>
+										</div>
+										<div class="review">
+											<img src="img/svetlana.jpg" alt="">
+											<p class="review-header">Светлана Давыдова</p>
+											<p class="review-header">Москва</p>
+											<p class="review-text">День добрый! Давно хотела написать отзыв, время не позволяло) Могу поставить жирный плюс работе компании в целом! Много топовых моделей, прям то что нужно! Вообще разнообразный ассортимент, по-моему для любого обувного магазинчика можно что-нибудь подыскать. Заказывала уже 3 раза. Доставка быстрая, весь товар был упакован отлично, каждая пара в отдельной фирменной коробе! Отмечу также, что для меня крайне важна вежливость, адекватность и прочие качества, присущие хорошему менеджеру! Так тут вообще без нареканий, наоборот, приятно удивлена столь тёплым отношением, которое в нынешнее время стало редкостью! В общем, за оперативность и такую клиентоориентированность, вам огромное спасибо!) Роста и процветания вашей компании!</p>
+										</div>
+										<div class="review">
+											<img src="img/vlad.jpg" alt="">
+											<p class="review-header">Владислав Тепляков</p>
+											<p class="review-header">Ростов-на-Дону</p>
+											<p class="review-text">У нас две торговые точки в нашем городе по розничным продажам обуви, обороты не очень большие, но ездим за товаром стабильно, с компанией «Территория обуви» работаем давно, познакомились с ними на выставке в Москве, подкупает деловое отношение, ассортимент, и цена адекватная. Сейчас начинаем делать интернет магазин, в чем, кстати, нам помогают наши поставщики! После начала сотрудничества увеличился объем продаж, проводили аналитику за пол года, и заметили рост в среднем на <span>18%</span>.</p>
+										</div>
+										<div class="review">
+											<img src="img/evgen.jpg" alt="">
+											<p class="review-header">Евгений Зяблин</p>
+											<p class="review-header">Екатеринбург</p>
+											<p class="review-text">Безупречный поставщик брендовой обуви в России! Великолепное и быстрое обслуживание! Заказываю обувь из натуральной кожи, зимой закупали UGGI.Если вздумаете открывать свой бизнес, то первым делом к ним!! Рекомендую!!</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="quick_contacts" class="s-end_feed" data-anchor="contacts">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="feed">
+								<div class="title-section">
+									<h3 class="h3">Оставьте заявку <span>прямо сейчас</span></h3>
+									<p>и получите полный каталог нашей продукции со специальными ценами!!</p>
+								</div>
+									<div class="callback-container">
+										<div class="feed_png1" style="background: url(img/zajavka.svg)"></div>
+										<form class="callback_end" id="registrater-form2" action="#" method="post">
+											<div class="succ" id="thank_you">
+												<div class="sered">
+													<img src="img/check-mark-button.svg" alt="">
+													<div class="title-fancy">
+														<p>Спасибо!<br>Ваша заявка отправлена.<br>В ближайшее время мы с Вами свяжемся!</p>
+													</div>
+												</div>
+											</div>
+											<div class="success-head"><span>Спасибо за заявку!</span></div>
+											<!-- Hidden Required Fields -->
+											<input type="hidden" name="project_name" value="Территория обуви">
+											<input type="hidden" name="admin_email" value="territoryshoes@gmail.com">
+											<input type="hidden" name="form_subject" value="Заявка с сайта Территория обуви">
+											<!-- END Hidden Required Fields -->
+												<input placeholder="Ваше имя" type="text" class="form-control" id="fio6" name="firstName">
+												<input class="form-control" id="fio7" placeholder="Электронная почта" type="email" name="email">
+												<input placeholder="Номер телефона" type="text" class="form-control" id="fio8" name="phone" autocomplete="off">
+												<input class="btn btn-primary" id="f_send1" type="submit" value="Sign Up">
+										</form>
+										<div class="feed_png2" style="background: url(img/zajavka.svg)"></div>
+									</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</div>
+
+		<div id="my-footer">
+			<div class="contacts-footer">
+				<div class="container">
+					<div class="row">
+							<div class="footer-conteiner">
+								<div class="logo footer-logo">
+									<img src="img/logo-white.png" alt="Территория обуви">
+								</div>
+								<div class="other-pages-footer">
+									<p>E-mail: <a href="https://vk.com/write?email=territoryshoes@gmail.com">territoryshoes@gmail.com</a></p>
+									<p>Vk.com: <a href="https://vk.com/club148352553">https://vk.com/club148352553</a></p>
+								</div>
+								<div class="number-phone-footer">
+									<p>+7(495) 266-67-14</p>
+									<a href="#fancy_cont" rel="nofollow" class="modalbox">
+										<button class="button button-white">Связаться с нами</button>
+									</a>
+									<p class="bottom-k">© 2017 Все права защищены «Территория обуви»</p>
+								</div>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="succ1" id="thank_you1" style="display: none">
+		<div class="sered">
+			<img src="img/check-mark-button.svg" alt="">
+			<div class="title-fancy">
+				<p>Спасибо!<br>Ваша заявка отправлена.<br>В ближайшее время мы с Вами свяжемся!</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="top" title="Наверх"><i class="fa fa-angle-double-up"></i></div>
+
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/scripts.min.js"></script>
+
+
+	</div>
+
+</body>
+</html>

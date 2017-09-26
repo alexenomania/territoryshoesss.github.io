@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Каталог - Территория Обуви</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<!-- Jquery -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.js"></script>
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+
+</head>
+
+<body class="iscatalog">
+	<!— Yandex.Metrika counter —> 
+	<script type="text/javascript" > 
+	(function (d, w, c) { 
+	(w[c] = w[c] || []).push(function() { 
+	try { 
+	w.yaCounter45596460 = new Ya.Metrika({ 
+	id:45596460, 
+	clickmap:true, 
+	trackLinks:true, 
+	accurateTrackBounce:true, 
+	webvisor:true 
+	}); 
+	} catch(e) { } 
+	}); 
+
+	var n = d.getElementsByTagName("script")[0], 
+	s = d.createElement("script"), 
+	f = function () { n.parentNode.insertBefore(s, n); }; 
+	s.type = "text/javascript"; 
+	s.async = true; 
+	s.src = "https://mc.yandex.ru/metrika/watch.js"; 
+
+	if (w.opera == "[object Opera]") { 
+	d.addEventListener("DOMContentLoaded", f, false); 
+	} else { f(); } 
+	})(document, window, "yandex_metrika_callbacks"); 
+	</script> 
+	<noscript><div><img src="https://mc.yandex.ru/watch/45596460" style="position:absolute; left:-9999px;" alt="" /></div></noscript> 
+	<!— /Yandex.Metrika counter —>
+	<div id="feedback" style="display:none">
+		<h4>Условия доставки</h4>
+		<p>По России, Казахстану, Украине и Беларуси отправляем нашими партнерами, либо любой транспортной компанией на ваш выбор.</p>
+		<p><strong>Россия:</strong></p>
+		<p>Головной склад находится в Москве, Екатеринбурге, Челябинске, Новосибирске.</p>
+		<p><span>6$</span> за 1кг. - Авиа <span>10-14</span> дней</p>
+		<p><span>8,5$</span> за 1кг. - Быстрый авиа <span>5-7</span> дней</p>
+		<p><span>3$</span> за 1кг. - Авто <span>18–24</span> дней</p>
+		<p><span>1-2$</span> за 1кг. - Море <span>от 45</span> дней</p>
+		<p><strong>Казахстан:</strong></p>
+		<p>Головной склад находится в г. Алматы.</p>
+		<p><span>3,5$</span> за 1кг. - Авто <span>9–14</span> дней</p>
+		<p><strong>Беларусь:</strong></p>
+		<p>Головного склада нет, отправляем из Москвы в г. Минск.</p>
+		<p><strong>Украина:</strong></p>
+		<p>Головной склад находится в г. Киев.</p>
+		<p><span>от 9$</span> за 1кг. - Авто <span>9–14</span> дней</p>
+		<p class="bottom_text b_t_top">Офис нашей компании находится в Китае, г. Гуанчжоу.</p>
+		<p class="bottom_text">Благодаря наличию собственного карго, у нас низкие цены доставки!</p>
+		<p class="bottom_text">Наша компания обеспечит для вас самые выгодные условия доставки, на всех этапах перевозки груза начиная с момента погрузки у поставщика в пункте «А» и заканчивая адресной доставкой в вашем городе в пункте «Б»</p>
+	</div>
+	<!— А это модал бокс, ёпте —>
+	<div class="preloader"><div class="pulse"></div></div>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="top-line-catalog">
+					<ul class="top-line-menu-catalog">
+						<li><a href="index.html">На главную</a></li>
+						<li><a href="" class="current">Каталог</a></li>
+						<li><a href="">Контакты</a></li>
+						<li><a href="#feedback" rel="nofollow" class="modalbox">Условия доставки</a></li>
+						<li><a href="">Заказать</a></li>
+					</ul>
+				</div>
+				<div class="top-banner">
+					<p class="text-banner-1">Только прямые поставки</p>
+					<span class="text-banner-1-s">по РФ и СНГ</span>
+					<p class="text-banner-2">Дешевле чем у конкурентов</p>
+					<span class="text-banner-2-s">До 30%</span>
+					<img class="banner-img"src="img/slipones-baner.png" alt="Территория Обуви Каталог">
+					<div class="logo logo-catalog"><img  src="img/logo-white.png" alt="Территория обуви"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<section class="s-catalog">
+		<div class="content-container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="menu-catalog">
+						<ul class="">
+							<li><a href="adidas.html">Adidas</a></li>
+							<li><a href="Nike.html">Nike</a></li>
+							<li><a href="" class="current">New Balance</a></li>
+							<li><a href="Timberland.html">Timberland</a></li>
+							<li><a href="Asics.html">Asics</a></li>
+							<li><a href="">UGG</a></li>
+							<li><a href="Under-Armour.html">Under Armour</a></li>
+						</ul>
+					</div>
+					<div class="catalog-position">
+						<div class="section-galery fotorama" data-allowfullscreen="true" data-nav="thumbs" data-thumbwidth="64" data-thumbheight="64" data-width="300" data-height="200">
+							<img src="img/fotorama-img/New Balance/NB 1728/1.png" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 1728/2.png" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 1728/3.png" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 1728/4.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 1728/5.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 1728/6.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 1728/7.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 1728/8.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 1728/9.jpg" alt="" >
+						</div>
+						<div class="position-text-color"><p>цветов: <span>15</span></p></div>
+						<div class="position-text-name"><p>Кроссовки <span>NB 1728</span></p></div>
+						<div class="position-text-cost"><p><span>1750</span>р.</p></div>
+						<button class="button">Заказать</button>
+					</div>
+					<div class="catalog-position">
+						<div class="section-galery fotorama" data-allowfullscreen="true" data-nav="thumbs" data-thumbwidth="64" data-thumbheight="64" data-width="300" data-height="200">
+							<img src="img/fotorama-img/New Balance/NB 007/1.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 007/2.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 007/3.jpg" alt="" >
+						</div>
+						<div class="position-text-color"><p>цветов: <span>3</span></p></div>
+						<div class="position-text-name"><p>Кроссовки <span>NB 007</span></p></div>
+						<div class="position-text-cost"><p><span>1820</span>р.</p></div>
+						<button class="button">Заказать</button>
+					</div>
+					<div class="catalog-position">
+						<div class="section-galery fotorama" data-allowfullscreen="true" data-nav="thumbs" data-thumbwidth="64" data-thumbheight="64" data-width="300" data-height="200">
+							<img src="img/fotorama-img/New Balance/NB 100 Lun Running Shoes/1.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 100 Lun Running Shoes/2.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 100 Lun Running Shoes/3.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 100 Lun Running Shoes/4.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 100 Lun Running Shoes/5.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 100 Lun Running Shoes/6.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 100 Lun Running Shoes/7.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 100 Lun Running Shoes/8.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 100 Lun Running Shoes/9.jpg" alt="" >
+						</div>
+						<div class="position-text-color"><p>цветов: <span>13</span></p></div>
+						<div class="position-text-name"><p>Кроссовки <span>NB 100 Lun Running Shoes</span></p></div>
+						<div class="position-text-cost"><p><span>1730</span>р.</p></div>
+						<button class="button">Заказать</button>
+					</div>
+					<div class="catalog-position">
+						<div class="section-galery fotorama" data-allowfullscreen="true" data-nav="thumbs" data-thumbwidth="64" data-thumbheight="64" data-width="300" data-height="200">
+							<img src="img/fotorama-img/New Balance/NB 247/1.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 247/2.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 247/3.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 247/4.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 247/5.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 247/6.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 247/7.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 247/8.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 247/9.jpg" alt="" >
+						</div>
+						<div class="position-text-color"><p>цветов: <span>46</span></p></div>
+						<div class="position-text-name"><p>Кроссовки <span>NB 247</span></p></div>
+						<div class="position-text-cost"><p><span>1820</span>р.</p></div>
+						<button class="button">Заказать</button>
+					</div>
+					<div class="catalog-position">
+						<div class="section-galery fotorama" data-allowfullscreen="true" data-nav="thumbs" data-thumbwidth="64" data-thumbheight="64" data-width="300" data-height="200">
+							<img src="img/fotorama-img/New Balance/NB 247 Children Shoes/1.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 247 Children Shoes/2.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 247 Children Shoes/3.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 247 Children Shoes/4.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 247 Children Shoes/5.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 247 Children Shoes/6.jpg" alt="" >
+						</div>
+						<div class="position-text-color"><p>цветов: <span>6</span></p></div>
+						<div class="position-text-name"><p>Кроссовки <span>NB Children Shoes</span></p></div>
+						<div class="position-text-cost"><p><span>1820</span>р.</p></div>
+						<button class="button">Заказать</button>
+					</div>
+					<div class="catalog-position">
+						<div class="section-galery fotorama" data-allowfullscreen="true" data-nav="thumbs" data-thumbwidth="64" data-thumbheight="64" data-width="300" data-height="200">
+							<img src="img/fotorama-img/New Balance/NB 247 Genuine Standart/1.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 247 Genuine Standart/2.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 247 Genuine Standart/3.jpg" alt="" >
+						</div>
+						<div class="position-text-color"><p>цветов: <span>3</span></p></div>
+						<div class="position-text-name"><p>Кроссовки <span>NB 247 Genuine Standart</span></p></div>
+						<div class="position-text-cost"><p><span>1820</span>р.</p></div>
+						<button class="button">Заказать</button>
+					</div>
+					<div class="catalog-position">
+						<div class="section-galery fotorama" data-allowfullscreen="true" data-nav="thumbs" data-thumbwidth="64" data-thumbheight="64" data-width="300" data-height="200">
+							<img src="img/fotorama-img/New Balance/NB 300/1.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 300/2.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 300/4.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 300/5.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 300/6.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 300/7.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 300/8.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 300/9.jpg" alt="" >
+						</div>
+						<div class="position-text-color"><p>цветов: <span>27</span></p></div>
+						<div class="position-text-name"><p>Кроссовки <span>NB 300</span></p></div>
+						<div class="position-text-cost"><p><span>1810</span>р.</p></div>
+						<button class="button">Заказать</button>
+					</div>
+					<div class="catalog-position">
+						<div class="section-galery fotorama" data-allowfullscreen="true" data-nav="thumbs" data-thumbwidth="64" data-thumbheight="64" data-width="300" data-height="200">
+							<img src="img/fotorama-img/New Balance/NB 373/1.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 373/2.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 373/3.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 373/4.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 373/5.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 373/6.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 373/7.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 373/8.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 373/9.jpg" alt="" >
+						</div>
+						<div class="position-text-color"><p>цветов: <span>12</span></p></div>
+						<div class="position-text-name"><p>Кроссовки <span>NB 373</span></p></div>
+						<div class="position-text-cost"><p><span>1650</span>р.</p></div>
+						<button class="button">Заказать</button>
+					</div>
+					<div class="catalog-position">
+						<div class="section-galery fotorama" data-allowfullscreen="true" data-nav="thumbs" data-thumbwidth="64" data-thumbheight="64" data-width="300" data-height="200">
+							<img src="img/fotorama-img/New Balance/NB 530 Second Generation/1.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 530 Second Generation/2.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 530 Second Generation/3.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 530 Second Generation/4.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 530 Second Generation/5.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 530 Second Generation/6.jpg" alt="" >
+						</div>
+						<div class="position-text-color"><p>цветов: <span>6</span></p></div>
+						<div class="position-text-name"><p>Кроссовки <span>NB 530 Second Generation</span></p></div>
+						<div class="position-text-cost"><p><span>1720</span>р.</p></div>
+						<button class="button">Заказать</button>
+					</div>
+					<div class="catalog-position">
+						<div class="section-galery fotorama" data-allowfullscreen="true" data-nav="thumbs" data-thumbwidth="64" data-thumbheight="64" data-width="300" data-height="200">
+							<img src="img/fotorama-img/New Balance/NB 533/1.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 533/2.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 533/3.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 533/4.jpg" alt="" >
+						</div>
+						<div class="position-text-color"><p>цветов: <span>4</span></p></div>
+						<div class="position-text-name"><p>Кроссовки <span>NB 533</span></p></div>
+						<div class="position-text-cost"><p><span>1780</span>р.</p></div>
+						<button class="button">Заказать</button>
+					</div>
+					<div class="catalog-position">
+						<div class="section-galery fotorama" data-allowfullscreen="true" data-nav="thumbs" data-thumbwidth="64" data-thumbheight="64" data-width="300" data-height="200">
+							<img src="img/fotorama-img/New Balance/NB 565/1.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 565/2.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 565/3.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 565/4.jpg" alt="" >
+						</div>
+						<div class="position-text-color"><p>цветов: <span>4</span></p></div>
+						<div class="position-text-name"><p>Кроссовки <span>NB 565</span></p></div>
+						<div class="position-text-cost"><p><span>1710</span>р.</p></div>
+						<button class="button">Заказать</button>
+					</div>
+					<div class="catalog-position">
+						<div class="section-galery fotorama" data-allowfullscreen="true" data-nav="thumbs" data-thumbwidth="64" data-thumbheight="64" data-width="300" data-height="200">
+							<img src="img/fotorama-img/New Balance/NB 574 Pig Bar/1.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 574 Pig Bar/2.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 574 Pig Bar/3.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 574 Pig Bar/4.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 574 Pig Bar/5.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 574 Pig Bar/6.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 574 Pig Bar/7.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 574 Pig Bar/8.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 574 Pig Bar/9.jpg" alt="" >
+						</div>
+						<div class="position-text-color"><p>цветов: <span>34</span></p></div>
+						<div class="position-text-name"><p>Кроссовки <span>NB 574 Pig Bar</span></p></div>
+						<div class="position-text-cost"><p><span>1790</span>р.</p></div>
+						<button class="button">Заказать</button>
+					</div>
+					<div class="catalog-position">
+						<div class="section-galery fotorama" data-allowfullscreen="true" data-nav="thumbs" data-thumbwidth="64" data-thumbheight="64" data-width="300" data-height="200">
+							<img src="img/fotorama-img/New Balance/NB 575/1.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 575/2.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 575/3.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 575/4.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 575/5.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 575/6.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 575/7.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 575/8.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 575/9.jpg" alt="" >
+						</div>
+						<div class="position-text-color"><p>цветов: <span>10</span></p></div>
+						<div class="position-text-name"><p>Кроссовки <span>NB 575</span></p></div>
+						<div class="position-text-cost"><p><span>1530</span>р.</p></div>
+						<button class="button">Заказать</button>
+					</div>
+					<div class="catalog-position">
+						<div class="section-galery fotorama" data-allowfullscreen="true" data-nav="thumbs" data-thumbwidth="64" data-thumbheight="64" data-width="300" data-height="200">
+							<img src="img/fotorama-img/New Balance/NB 585/1.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 585/2.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 585/3.jpg" alt="" >
+						</div>
+						<div class="position-text-color"><p>цветов: <span>3</span></p></div>
+						<div class="position-text-name"><p>Кроссовки <span>NB 585</span></p></div>
+						<div class="position-text-cost"><p><span>1715</span>р.</p></div>
+						<button class="button">Заказать</button>
+					</div>
+					<div class="catalog-position">
+						<div class="section-galery fotorama" data-allowfullscreen="true" data-nav="thumbs" data-thumbwidth="64" data-thumbheight="64" data-width="300" data-height="200">
+							<img src="img/fotorama-img/New Balance/NB 655 Pig Eight Leather/1.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 655 Pig Eight Leather/2.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 655 Pig Eight Leather/3.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 655 Pig Eight Leather/4.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 655 Pig Eight Leather/5.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 655 Pig Eight Leather/6.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 655 Pig Eight Leather/7.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 655 Pig Eight Leather/8.jpg" alt="" >
+						</div>
+						<div class="position-text-color"><p>цветов: <span>8</span></p></div>
+						<div class="position-text-name"><p>Кроссовки <span>NB 655 Pig Eight Leather</span></p></div>
+						<div class="position-text-cost"><p><span>1750</span>р.</p></div>
+						<button class="button">Заказать</button>
+					</div>
+					<div class="catalog-position">
+						<div class="section-galery fotorama" data-allowfullscreen="true" data-nav="thumbs" data-thumbwidth="64" data-thumbheight="64" data-width="300" data-height="200">
+							<img src="img/fotorama-img/New Balance/NB 660/1.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 660/2.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 660/3.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 660/4.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 660/5.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 660/6.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 660/7.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 660/8.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 660/9.jpg" alt="" >
+						</div>
+						<div class="position-text-color"><p>цветов: <span>11</span></p></div>
+						<div class="position-text-name"><p>Кроссовки <span>NB 660</span></p></div>
+						<div class="position-text-cost"><p><span>1640</span>р.</p></div>
+						<button class="button">Заказать</button>
+					</div>
+					<div class="catalog-position">
+						<div class="section-galery fotorama" data-allowfullscreen="true" data-nav="thumbs" data-thumbwidth="64" data-thumbheight="64" data-width="300" data-height="200">
+							<img src="img/fotorama-img/New Balance/NB 770/1.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 770/2.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 770/3.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 770/4.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 770/5.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 770/6.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 770/7.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 770/8.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 770/9.jpg" alt="" >
+						</div>
+						<div class="position-text-color"><p>цветов: <span>15</span></p></div>
+						<div class="position-text-name"><p>Кроссовки <span>NB 770</span></p></div>
+						<div class="position-text-cost"><p><span>1750</span>р.</p></div>
+						<button class="button">Заказать</button>
+					</div>
+					<div class="catalog-position">
+						<div class="section-galery fotorama" data-allowfullscreen="true" data-nav="thumbs" data-thumbwidth="64" data-thumbheight="64" data-width="300" data-height="200">
+							<img src="img/fotorama-img/New Balance/NB 860/1.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 860/2.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 860/3.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 860/4.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 860/5.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 860/6.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 860/7.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 860/8.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 860/9.jpg" alt="" >
+						</div>
+						<div class="position-text-color"><p>цветов: <span>9</span></p></div>
+						<div class="position-text-name"><p>Кроссовки <span>NB 860</span></p></div>
+						<div class="position-text-cost"><p><span>1730</span>р.</p></div>
+						<button class="button">Заказать</button>
+					</div>
+					<div class="catalog-position">
+						<div class="section-galery fotorama" data-allowfullscreen="true" data-nav="thumbs" data-thumbwidth="64" data-thumbheight="64" data-width="300" data-height="200">
+							<img src="img/fotorama-img/New Balance/NB 990/1.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 990/2.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 990/3.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 990/4.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 990/5.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 990/6.jpg" alt="" >
+						</div>
+						<div class="position-text-color"><p>цветов: <span>6</span></p></div>
+						<div class="position-text-name"><p>Кроссовки <span>NB 990</span></p></div>
+						<div class="position-text-cost"><p><span>1820</span>р.</p></div>
+						<button class="button">Заказать</button>
+					</div>
+					<div class="catalog-position">
+						<div class="section-galery fotorama" data-allowfullscreen="true" data-nav="thumbs" data-thumbwidth="64" data-thumbheight="64" data-width="300" data-height="200">
+							<img src="img/fotorama-img/New Balance/NB 993/1.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 993/2.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 993/3.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 993/4.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 993/5.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 993/6.jpg" alt="" >
+						</div>
+						<div class="position-text-color"><p>цветов: <span>6</span></p></div>
+						<div class="position-text-name"><p>Кроссовки <span>NB 993</span></p></div>
+						<div class="position-text-cost"><p><span>1700</span>р.</p></div>
+						<button class="button">Заказать</button>
+					</div>
+					<div class="catalog-position">
+						<div class="section-galery fotorama" data-allowfullscreen="true" data-nav="thumbs" data-thumbwidth="64" data-thumbheight="64" data-width="300" data-height="200">
+							<img src="img/fotorama-img/New Balance/NB 995/1.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 995/2.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 995/3.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 995/4.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 995/5.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 995/6.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 995/7.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 995/8.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 995/9.jpg" alt="" >
+						</div>
+						<div class="position-text-color"><p>цветов: <span>14</span></p></div>
+						<div class="position-text-name"><p>Кроссовки <span>NB 995</span></p></div>
+						<div class="position-text-cost"><p><span>1820</span>р.</p></div>
+						<button class="button">Заказать</button>
+					</div>
+					<div class="catalog-position">
+						<div class="section-galery fotorama" data-allowfullscreen="true" data-nav="thumbs" data-thumbwidth="64" data-thumbheight="64" data-width="300" data-height="200">
+							<img src="img/fotorama-img/New Balance/NB 996 New Color/1.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 996 New Color/2.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 996 New Color/3.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 996 New Color/4.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 996 New Color/5.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 996 New Color/6.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 996 New Color/7.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 996 New Color/8.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 996 New Color/9.jpg" alt="" >
+						</div>
+						<div class="position-text-color"><p>цветов: <span>15</span></p></div>
+						<div class="position-text-name"><p>Кроссовки <span>NB 996 New Color</span></p></div>
+						<div class="position-text-cost"><p><span>1820</span>р.</p></div>
+						<button class="button">Заказать</button>
+					</div>
+					<div class="catalog-position">
+						<div class="section-galery fotorama" data-allowfullscreen="true" data-nav="thumbs" data-thumbwidth="64" data-thumbheight="64" data-width="300" data-height="200">
+							<img src="img/fotorama-img/New Balance/NB 997.5/1.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 997.5/2.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 997.5/3.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 997.5/4.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 997.5/5.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 997.5/6.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 997.5/7.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 997.5/8.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 997.5/9.jpg" alt="" >
+						</div>
+						<div class="position-text-color"><p>цветов: <span>54</span></p></div>
+						<div class="position-text-name"><p>Кроссовки <span>NB 997.5</span></p></div>
+						<div class="position-text-cost"><p><span>1820</span>р.</p></div>
+						<button class="button">Заказать</button>
+					</div>
+					<div class="catalog-position">
+						<div class="section-galery fotorama" data-allowfullscreen="true" data-nav="thumbs" data-thumbwidth="64" data-thumbheight="64" data-width="300" data-height="200">
+							<img src="img/fotorama-img/New Balance/NB 998/1.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 998/2.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 998/3.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 998/4.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 998/5.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 998/6.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 998/7.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 998/8.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 998/9.jpg" alt="" >
+						</div>
+						<div class="position-text-color"><p>цветов: <span>69</span></p></div>
+						<div class="position-text-name"><p>Кроссовки <span>NB 998</span></p></div>
+						<div class="position-text-cost"><p><span>1830</span>р.</p></div>
+						<button class="button">Заказать</button>
+					</div>
+					<div class="catalog-position">
+						<div class="section-galery fotorama" data-allowfullscreen="true" data-nav="thumbs" data-thumbwidth="64" data-thumbheight="64" data-width="300" data-height="200">
+							<img src="img/fotorama-img/New Balance/NB 1300/1.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 1300/2.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 1300/3.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 1300/4.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 1300/5.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 1300/6.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 1300/7.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 1300/8.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 1300/9.jpg" alt="" >
+						</div>
+						<div class="position-text-color"><p>цветов: <span>26</span></p></div>
+						<div class="position-text-name"><p>Кроссовки <span>NB 1300</span></p></div>
+						<div class="position-text-cost"><p><span>1830</span>р.</p></div>
+						<button class="button">Заказать</button>
+					</div>
+					<div class="catalog-position">
+						<div class="section-galery fotorama" data-allowfullscreen="true" data-nav="thumbs" data-thumbwidth="64" data-thumbheight="64" data-width="300" data-height="200">
+							<img src="img/fotorama-img/New Balance/NB 1500/1.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 1500/2.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 1500/3.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 1500/4.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 1500/5.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 1500/6.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 1500/7.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 1500/8.jpg" alt="" >
+						</div>
+						<div class="position-text-color"><p>цветов: <span>67</span></p></div>
+						<div class="position-text-name"><p>Кроссовки <span>NB 1500</span></p></div>
+						<div class="position-text-cost"><p><span>1820</span>р.</p></div>
+						<button class="button">Заказать</button>
+					</div>
+					<div class="catalog-position">
+						<div class="section-galery fotorama" data-allowfullscreen="true" data-nav="thumbs" data-thumbwidth="64" data-thumbheight="64" data-width="300" data-height="200">
+							<img src="img/fotorama-img/New Balance/NB 1978 Children Shoes/1.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 1978 Children Shoes/2.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 1978 Children Shoes/3.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 1978 Children Shoes/4.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 1978 Children Shoes/5.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 1978 Children Shoes/6.jpg" alt="" >
+						</div>
+						<div class="position-text-color"><p>цветов: <span>6</span></p></div>
+						<div class="position-text-name"><p>Кроссовки <span>NB 1978 Children Shoes</span></p></div>
+						<div class="position-text-cost"><p><span>1650</span>р.</p></div>
+						<button class="button">Заказать</button>
+					</div>
+					<div class="catalog-position">
+						<div class="section-galery fotorama" data-allowfullscreen="true" data-nav="thumbs" data-thumbwidth="64" data-thumbheight="64" data-width="300" data-height="200">
+							<img src="img/fotorama-img/New Balance/NB 1991/1.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB 1991/2.jpg" alt="" >
+						</div>
+						<div class="position-text-color"><p>цветов: <span>2</span></p></div>
+						<div class="position-text-name"><p>Кроссовки <span>NB 1991</span></p></div>
+						<div class="position-text-cost"><p><span>1820</span>р.</p></div>
+						<button class="button">Заказать</button>
+					</div>
+					<div class="catalog-position">
+						<div class="section-galery fotorama" data-allowfullscreen="true" data-nav="thumbs" data-thumbwidth="64" data-thumbheight="64" data-width="300" data-height="200">
+							<img src="img/fotorama-img/New Balance/NB Automatic Lacing/1.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB Automatic Lacing/2.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB Automatic Lacing/3.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB Automatic Lacing/4.jpg" alt="" >
+						</div>
+						<div class="position-text-color"><p>цветов: <span>4</span></p></div>
+						<div class="position-text-name"><p>Кроссовки <span>NB Automatic Lacing</span></p></div>
+						<div class="position-text-cost"><p><span>1815</span>р.</p></div>
+						<button class="button">Заказать</button>
+					</div>
+					<div class="catalog-position">
+						<div class="section-galery fotorama" data-allowfullscreen="true" data-nav="thumbs" data-thumbwidth="64" data-thumbheight="64" data-width="300" data-height="200">
+							<img src="img/fotorama-img/New Balance/NB Running Shoes/1.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB Running Shoes/2.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB Running Shoes/3.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB Running Shoes/4.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB Running Shoes/5.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB Running Shoes/6.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB Running Shoes/7.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB Running Shoes/8.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB Running Shoes/9.jpg" alt="" >
+						</div>
+						<div class="position-text-color"><p>цветов: <span>11</span></p></div>
+						<div class="position-text-name"><p>Кроссовки <span>NB Running Shoes</span></p></div>
+						<div class="position-text-cost"><p><span>1780</span>р.</p></div>
+						<button class="button">Заказать</button>
+					</div>
+					<div class="catalog-position">
+						<div class="section-galery fotorama" data-allowfullscreen="true" data-nav="thumbs" data-thumbwidth="64" data-thumbheight="64" data-width="300" data-height="200">
+							<img src="img/fotorama-img/New Balance/NB Classic Long/1.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB Classic Long/2.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB Classic Long/3.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB Classic Long/4.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB Classic Long/5.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB Classic Long/6.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB Classic Long/7.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB Classic Long/8.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB Classic Long/9.jpg" alt="" >
+						</div>
+						<div class="position-text-color"><p>цветов: <span>71</span></p></div>
+						<div class="position-text-name"><p>Кроссовки <span>NB Classic Long</span></p></div>
+						<div class="position-text-cost"><p><span>1830</span>р.</p></div>
+						<button class="button">Заказать</button>
+					</div>
+					<div class="catalog-position">
+						<div class="section-galery fotorama" data-allowfullscreen="true" data-nav="thumbs" data-thumbwidth="64" data-thumbheight="64" data-width="300" data-height="200">
+							<img src="img/fotorama-img/New Balance/NB Open Laugh/1.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB Open Laugh/2.jpg" alt="" >
+							<img src="img/fotorama-img/New Balance/NB Open Laugh/3.jpg" alt="" >
+						</div>
+						<div class="position-text-color"><p>цветов: <span>3</span></p></div>
+						<div class="position-text-name"><p>Кроссовки <span>NB Open Laugh</span></p></div>
+						<div class="position-text-cost"><p><span>1650</span>р.</p></div>
+						<button class="button">Заказать</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
