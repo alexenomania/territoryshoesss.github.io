@@ -1,0 +1,1084 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+html, body
+	height: 100%
+
+body
+	font-size: 18px
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+	&.ishome
+		.my-header-class
+			background-color: #000
+			.site-header
+				min-height: 700px
+				height: 100vh
+				.top-line
+					color: #fff
+					margin-top: 60px
+					z-index: 1
+					width: 100%
+					height: 173px
+					.header-container
+						float: right
+						padding: 0px
+						.header-col
+							display: inline-block
+						.modalbox
+							display: inline-block	
+					a
+						margin-right: 40px
+						color: #fff
+						text-decoration: none
+					.header-phone
+						float: right
+						max-width: 280px
+						margin-right: 100px
+						margin-top: 20px
+						a
+							font-size: 30px
+							font-family: FiraSans-test
+							margin: 0
+
+#feedback
+	color: #000
+	max-width: 600px
+	border-radius: 6px
+	background-color: #fafafa
+	.bottom_text
+		text-align: center
+	.b_t_top
+		border-top: 1px solid rgba(#9e9e9e, 0.4)
+		margin-top: 10px
+		padding-top: 5px
+	p
+		font-size: 16px
+		margin: 0
+		strong
+			font-size: 18px
+			padding-left: 10px
+		span
+			font-size: 15px
+			font-weight: 600
+			font-family: FiraSans-test
+	h4
+		padding: 5px 0
+		margin: 0 0 10px 0
+		border-bottom: 1px solid rgba(#9e9e9e, 0.4)
+		font-size: 22px
+
+.h1, .h2, .h4, .h5, .h6
+	line-height: 1.4
+	text-transform: uppercase
+.h3
+	line-height: 1.4
+.modalbox
+	outline-style: none!important
+	text-decoration: none!important
+
+.composition-title
+	position: relative
+	margin-top: 160px
+	text-align: center
+	color: white
+	.h1
+		font-weight: 600
+		font-size: 47px
+		font-family: raleway-test
+		margin: 0
+		line-height: 1.1
+		strong
+			font-size: 57px
+
+	.p
+		font-size: 21px
+		font-weight: 600
+		padding-top: 80px
+		padding-bottom: 40px
+		p
+			margin: 0
+	.callback
+		padding-top: 40px
+		input, textarea
+		 margin: 3px 5px
+
+input, textarea
+	border: $graybolder 1px solid
+	border-bottom: $graybolder 2px solid
+	border-radius: 4px
+	padding: 5px 10px
+	outline: none
+	display: inline-block
+	font-size: 16px
+	color: #000
+	&::-webkit-input-placeholder
+		color: #131313
+		opacity: 1
+	&::-moz-placeholder
+		color: #131313
+		opacity: 1
+	&::-ms-input-placeholder
+		color: #131313
+
+
+
+.logo
+	float: left
+	img
+		width: 157px
+		height: 173px
+	&.footer-logo
+		img
+			width: 95px
+			height: 105px
+.logo-catalog
+	position: absolute
+	top: 200px
+	left: 472.5px
+	z-index: 1
+
+.title-section
+	padding-top: 60px
+	text-align: center
+	.h3
+		font-size: 36px
+		margin: 0
+		font-weight: 800
+		margin-bottom: 12px
+		text-shadow: 0 2px 6px rgba(0,0,0,.4)
+	p
+		margin: 0
+		font-size: 18px
+
+.s-partners
+	.col-sm-12
+		display: flex
+		.parthners-logo
+			display: inline-block
+			margin: 0 auto
+			.line-logo
+				margin: 5px 0px
+				.image-box
+					display: inline-block
+					width: 200px
+					height: 130px
+					text-align: center
+					background-position: center center 
+					background-size: contain
+					background-repeat: no-repeat
+					white-space: nowrap
+					margin: 0px 12px
+
+.s-privelege
+	display: none
+	background-color: #131313
+	.privelege
+		color: #fff
+		text-align: center
+		margin-bottom: 60px
+		.col-sm-12
+			display: flex
+			.container_line_privelege
+				margin: 110px auto 80px auto
+				.priv_elem
+					vertical-align: top
+					display: inline-block
+					text-align: center
+					width: 292px
+					margin: 0 32px
+					margin-bottom: 65px
+					.svgg
+						margin: auto
+						width: 128px
+						height: 128px
+						border: 5px solid
+						border-color: #fff
+						border-radius: 100px
+					p
+						font-size: 18px
+						text-align: center
+						margin: 15px 0 0 0
+
+.s-bestseller
+	background-color: #fafafa
+	.col-sm-12
+		display: flex
+		.bestseller
+			color: #000
+			position: relative
+			margin: 0 auto 0 auto
+			.title-section
+				.h3
+					color: darken($graybolder, 30%)
+					span
+						color: darken($green_good, 5%)
+				p
+					span
+						font-weight: 600
+		.product-container
+			margin: 60px 0 30px 0
+			.product
+				display: inline-block
+				margin: 0 20px 30px 20px
+				padding: 25px 5px 25px 5px
+				border: 2px solid
+				border-color: #95989A
+				max-width: 360px
+				box-shadow: 0 3px 6px rgba(0,0,0,0.4)
+				background-color: #fff
+				border-radius: 4px
+				text-align: center
+				.product-image
+					height: 200px
+				p
+					margin: 0
+				.product-name
+					border-bottom: 1px solid
+					width: 60%
+					margin: 20px auto 25px auto
+				.price-container
+					border: 2px solid
+					margin: 0 auto 0 auto
+					width: 300px
+					margin-bottom: 10px
+					.text-price
+						margin-bottom: 10px
+					.cost-price
+						font-size: 16px
+						font-weight: 600
+						span
+							font-weight: 800
+							font-family: FiraSans-test
+						&.line-price
+							text-decoration: line-through
+
+.s-differences
+	background-color: #fafafa
+	.difference
+		margin: 0 auto
+		padding-bottom: 40px
+		border-bottom: 1px solid $graybolder
+		.col-md-6
+			position: relative
+			min-height: 1px
+			padding-left: 15px
+			padding-right: 15px
+			.dif-zag
+				font-size: 36px
+				text-transform: uppercase
+				font-weight: 800
+				margin: 50px auto
+			.left_good
+				color: darken($green_good, 5%)
+				text-align: right
+			.right_bed
+				color: darken($graybolder,20%)
+			.ul-start
+				list-style: none
+				li
+					display: block
+					margin-bottom: 20px
+					font-size: 20px
+					color: #122d53
+					span
+						font-family: FiraSans-test
+			.ul-left
+				text-align: right
+				.fa
+					color: $green_good
+			.ul-right
+				padding-left: 0
+				.fa
+					color: darken($graybolder,20%)
+		.vertical-line
+			width: 1px
+			background: #333
+			height: 500px
+			display: block
+			position: relative
+			left: 583px
+			top: 30px
+		.col-sm-12
+			display: flex
+			.button
+				margin: 60px auto
+				padding-left: 150px
+				padding-right: 150px
+
+.displ
+	display: inline-block
+	vertical-align: middle
+.displ-down
+	display: inline-block
+.next3
+	margin-left: 810px
+	margin-bottom: 60px
+.s-h-we-wk
+	color: #fafafa
+	.h-we-wk
+		.title-section
+			span
+				color: lighten($green_good, 5%)
+		text-align: center
+		.dop-detail
+			padding: 0 0 60px 0
+			.button
+				padding: 16px 100px
+		.h-we-wk-row
+			margin: 140px auto
+			.number-container
+				background-color: #fafafa
+				color: $red
+				font-weight: 600
+				width: 35px
+				height: 35px
+				position: absolute
+				margin: 0
+				border-radius: 10em
+				line-height: 37px
+				font-family: FiraSans-test
+				border: 1px solid $graybolder
+				box-shadow: 0 3px 6px rgba(0,0,0,0.4)
+			.contain-h-we-wk
+				margin: 20px 20px
+				.img-cont
+					border: 5px solid #fafafa
+					width: 128px
+					height: 128px
+					margin: auto
+					border-radius: 10em
+				img
+					width: 64px
+					height: 64px
+					margin-top: 26px
+				.h-we-wk-text
+					.only_marg
+						margin: 0 20px
+					margin-top: 15px
+					p
+						font-size: 18px
+						margin: 0
+						font-weight: 600
+						strong
+							font-family: FiraSans-test
+							color: $red
+
+.s-ansver-partners
+	color: #fff
+	display: none
+	.change-bg
+		background-color: rgba(0, 0, 0, 0.5)
+		.col-sm-12
+			display: flex
+			.col-sm-9
+				margin: auto
+				.title-section
+					letter-spacing: 2px
+				.reviews
+					margin: 20px 0 60px 0
+					.review
+						text-align: center
+						img
+							width: 179px
+							height: 179px
+							border: 1px solid
+							border-color: #95989A
+							border-radius: 100px
+							margin-bottom: 13px
+							margin: 20px auto
+						.review-header
+							margin: 2px 0 2px 0
+							font-size: 20px
+						.review-text
+							font-size: 17px
+							font-weight: 300
+							span
+								font-family: FiraSans-test
+
+.owl-dots
+	width: 100%
+	text-align: center
+	margin-top: 30px
+	> div
+		width: 10px
+		height: 10px
+		background-color:#fff
+		margin: 10px
+		text-align: center
+		display: inline-block
+		border-radius: 10em
+		transition: background-color .25s ease, transform .25s ease
+		&.active
+			background-color: $green_good
+			transform: scale(1.5)
+
+.owl-nav
+	> div
+		width: 50px
+		height: 50px
+		background-color: #fff
+		color: #000
+		text-align: center
+		line-height: 50px
+		font-size: 26px
+		border-radius: 10em
+		position: absolute
+		top: 40%
+		transition: background-color .25s ease
+		&.owl-prev
+			left: -70px
+			&:hover
+				background-color: lighten($green_good, 5%)
+			&:active
+				background-color: darken($green_good, 2%)
+		&.owl-next
+			right: -70px
+			&:hover
+				background-color: lighten($green_good, 5%)
+			&:active
+				background-color: darken($green_good, 2%)
+
+
+.contacts-footer
+	background-color: #131313
+	position: relative
+	color: #fff
+	margin: 35px auto
+	.footer-conteiner
+		.other-pages-footer
+			margin-left: 30px
+			float: left
+			margin-top: 17px
+		.number-phone-footer
+			float: right
+			font-family: FiraSans-test
+			text-align: center
+		.bottom-k
+			margin-top: 15px
+
+
+.button
+	border: none
+	color: #fff
+	text-decoration: none
+	background-color: darken($green_good, 0%)
+	padding: 16px 180px
+	font-size: 13px
+	font-weight: 600
+	letter-spacing: 3px
+	border-radius: 4px
+	text-align: center
+	position: relative
+	outline: none
+	transition: background-color .1s ease
+	&::after
+		transition: background-color .2s ease
+		position: absolute
+		content: ''
+		height: 4px
+		bottom: 0
+		width: 100%
+		background-color: darken($green_good, 50%)
+		opacity: .18
+		border-bottom-left-radius: 2px
+		border-bottom-right-radius: 2px
+		left: 0
+	&:focus, &:hover
+		text-decoration: none
+		color: #fff
+	&:hover
+		background-color: lighten($green_good, 5%)
+		&::after
+			opacity: .22
+	&:active
+		background-color: darken($green_good, 5%)
+		&::after
+			opacity: .32
+	&.button-black
+		background-color: darken($green_good, 5%)
+		padding: 5px 10px
+		font-size: 14px
+		&::after
+			background-color: rgba(#fff, .4)
+			height: 5px
+		&:hover
+			background-color: rgba(darken($green_good, 10%), .8)
+		&:active
+			&::after
+				background-color: rgba(darken($green_good, 10%), .9)
+	&.button-white
+		background-color: rgba(#fff, .1)
+		padding: 10px 50px
+		border: 1px solid
+		&::after
+			background-color: darken(#fff, 50%)
+		&:hover
+			&::after
+				background-color: darken(#fff, 20%)
+		&:active
+			&::after
+				background-color: darken(#fff, 50%)
+	&.button-header
+		padding: 11px 15px
+.button-href
+	font-size: 20px
+	text-decoration: none
+	background-color: transparent
+	border: none
+	outline: none
+	position: relative
+	transition: background-color .1s ease
+	border-radius: 6px
+	&:hover
+		background-color: lighten(#131313, 5%)
+		
+
+section, header
+	position: relative
+	background-size: cover
+	background-position: center
+
+section
+	background-color: #fff
+
+.section-overlay
+	&::before
+		content: ''
+		//position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+
+.img-resh4ponsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.header-flex
+	display: flex
+	height: 100%
+	position: relative
+	top: 0
+
+.flex-center
+	margin: 0 auto 0 auto
+
+.success-head
+	display: none
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	text-transform: uppercase
+	z-index: 10
+	span
+		margin: auto
+		& ~ *
+		transition: all .5s ease
+		&.active
+			& ~ *
+				opacity: .5
+				filter: blur(10px)
+.s-end_feed
+	background-color: #fafafa
+	color: #000
+	.col-sm-12
+		display: flex
+		.feed
+			text-align: center
+			margin: auto
+			.title-section
+				.h3
+					font-size: 56px
+					font-weight: 600
+					margin-bottom: 0
+					color: darken($graybolder, 30%)
+					span
+						color: darken($green_good, 5%)
+			.callback-container
+				margin: 40px 0 60px 0
+				.feed_png1
+					display: inline-block
+					vertical-align: middle
+					height: 102px
+					width: 102px
+					transform: scaleX(-1)
+				.feed_png2
+					display: inline-block
+					vertical-align: middle
+					height: 102px
+					width: 102px
+				.callback_end
+					display: inline-block
+					vertical-align: middle
+					margin: 0 40px
+					input
+						display: block
+						margin: 20px 0
+						width: 330px
+					.button
+						padding: 11px 83px
+						
+#fancy_cont, #katalog_and_email, #thank_you, #thank_you1, #katalog_and_email_download
+	border-radius: 6px
+	background-color: #fafafa
+	max-width: 400px
+	input, button
+		display: block
+		margin: 10px 0
+		width: 330px
+	button
+		margin: auto
+		margin-top: 12px
+	input
+		margin: auto
+		height: 44px
+		padding: 12px 6px 12px 6px
+	.title-fancy
+		text-align: center
+		font-weight: 600
+		padding: 10px 0 15px 0
+		margin: 0 0 15px 0
+		border-bottom: 1px solid rgba(#9e9e9e, 0.4)
+		font-size: 22px
+		line-height: 1.1
+	p
+		padding-left: 10px
+		margin: 0
+	span
+		color: red
+		font-weight: 800
+	img
+		width: 88px
+		height: 88px
+		margin: auto
+		display: block
+
+.top
+	position: fixed
+	bottom: 25px
+	background-color: $green_good
+	border-radius: 10em
+	color: #fff
+	font-size: 26px
+	width: 55px
+	height: 55px
+	line-height: 55px
+	text-align: center
+	cursor: pointer
+	transition: all .25s ease
+	right: -100px
+	z-index: 12
+	opacity: .8
+	&.active
+		right: 30px
+	i
+		line-height: 0
+	&:hover
+		opacity: 1
+
+
+//Preloader
+.preloader
+	position: fixed
+	top: 0
+	left: 0
+	bottom: 0
+	right: 0
+	background-color: #151515
+	z-index: 100
+@mixin opacity($opacity)
+	opacity: $opacity / 100
+	filter: alpha(opacity=$opacity)
+.pulse
+	position: relative
+	left: 50%
+	top: 50vh
+	margin:
+		left: -40px
+		top: -40px
+	&:before, &:after
+		content: ''
+		border: 5px solid #323232
+		width: 80px
+		height: 80px
+		border-radius: 500px
+		position: absolute
+	&:before
+		animation: pulse-outer .8s ease-in infinite
+	&:after
+		animation: pulse-inner .8s linear infinite
+
+@keyframes pulse-outer
+	0%
+		@include opacity(100)
+	50%
+		@include opacity(50)
+	100%
+		@include opacity(0)
+
+@keyframes pulse-inner
+	0%
+		transform: scale(0)
+		@include opacity(0)
+	100%
+		transform: scale(1)
+		@include opacity(100)
+
+.succ
+	display: none
+	position: absolute
+	right: 0
+	left: 0
+	top: 0
+	bottom: 0
+	.sered
+		margin: auto
+		.title-fancy
+			border-bottom: 0 !important
+	& ~ *
+		transition: all .5s ease
+	&.active
+		display: flex
+		& ~ *
+			opacity: .5
+			filter: blur(100px)
+
+.succ_call
+	margin: 60px auto 80px auto
+	bottom: 0
+	.sered
+		.title-fancy
+			border-bottom: 0 !important
+
+#fancy_download
+	border-radius: 6px
+	background-color: #ece9e9
+.title-fancy-red
+	text-align: center
+	font-size: 28px
+	font-weight: 600
+	margin: 0
+	color: darken($graybolder, 20%)
+	border-bottom: 1px solid $graybolder
+.container-choise
+	display: inline-block
+	margin: 20px 20px
+	img
+		height: 180px
+		width: 180px
+		margin: auto
+		display: block
+	button
+		display: block
+		background-color: $graybolder
+		&::after
+			background-color: darken($graybolder, 50%)
+		&:hover
+			background-color: lighten($graybolder, 5%)
+		&:active
+			background-color: darken($graybolder, 5%)
+	.fist_but
+		padding: 16px 76px
+	.sec_but
+		padding: 16px 58.5px
+
+#thank_you2
+	border-radius: 6px
+	background-color: rgba(189, 44, 44, 0.10)
+	max-width: 400px
+	input, button
+		display: block
+		margin: 10px 0
+		width: 330px
+	button
+		margin: auto
+		margin-top: 12px
+	input
+		margin: auto
+		height: 44px
+		padding: 12px 6px 12px 6px
+	.title-fancy
+		text-align: center
+		font-weight: 600
+		padding: 10px 0 15px 0
+		margin: 0 0 15px 0
+		border-bottom: 1px solid rgba(#9e9e9e, 0.4)
+		font-size: 22px
+		line-height: 1.1
+	p
+		padding-left: 10px
+		margin: 0
+	span
+		color: red
+		font-weight: 800
+	img
+		width: 88px
+		height: 88px
+		margin: auto
+		display: block
+.s-target-place
+	color: #fff
+	background-position: center center
+	background-repeat: no-repeat
+	.container
+		.row
+			.col-sm-12
+				.title-section
+					padding-bottom: 60px
+					.h3
+						font-size: 64px
+						color: lighten($green_good, 6%)
+						font-weight: 800
+				background-position: center center
+				background-repeat: no-repeat
+				.target-place
+					.panel-group
+						.panel
+							float: right
+							margin-bottom: 150px
+							background-color: transparent
+							.btn-success
+								background-color: hsl(136, 49%, 33%) !important
+								background-repeat: repeat-x
+								filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3db25c", endColorstr="#2a7d40")
+								background-image: -khtml-gradient(linear, left top, left bottom, from(#3db25c), to(#2a7d40))
+								background-image: -moz-linear-gradient(top, #3db25c, #2a7d40)
+								background-image: -ms-linear-gradient(top, #3db25c, #2a7d40)
+								background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3db25c), color-stop(100%, #2a7d40))
+								background-image: -webkit-linear-gradient(top, #3db25c, #2a7d40)
+								background-image: -o-linear-gradient(top, #3db25c, #2a7d40)
+								background-image: linear-gradient(#3db25c, #2a7d40)
+								border-color: #2a7d40 #2a7d40 hsl(136, 49%, 29.5%)
+								color: #fff !important
+								text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.23)
+								-webkit-font-smoothing: antialiased
+							.btn
+								margin: 20px auto
+								padding-left: 32px
+								padding-right: 32px
+								
+
+.fancybox-close-small
+	width: 44px!important
+.black-bg
+	background-color: rgba(#000, 0.4)
+
+.new-rule
+	position: absolute
+	top: 0px
+	right: 200px
+	width: 260px
+	border: 1px solid #fff
+	background-color: rgba(#000, 0.8)
+	.country
+		border-bottom: 1px solid $graybolder
+		color: $red
+		font-weight: 800
+		font-size: 30px
+		line-height: 1.4
+	p
+		margin: 0 0 5px
+		text-align: center
+		strong
+			text-transform: uppercase
+		span
+			font-family: FiraSans-test
+			color: $red
+
+//Начало КАТАЛОГА, НЕ ХУЯРИТЬ НИЖЕ НИЧЕГО!!!!!!!!!!!!!!!!
+//Начало КАТАЛОГА, НЕ ХУЯРИТЬ НИЖЕ НИЧЕГО!!!!!!!!!!!!!!!!
+//Начало КАТАЛОГА, НЕ ХУЯРИТЬ НИЖЕ НИЧЕГО!!!!!!!!!!!!!!!!
+.content-container
+	margin: auto
+.iscatalog
+	background-color: #fafafa
+.s-catalog
+	background-color: #fafafa
+.top-line-menu-catalog
+	list-style: none
+	margin-top: 16px
+	text-align: center
+	background: #2F3847
+	padding-left: 0px
+	border: 2px solid #fff
+	box-shadow: 0 3px 6px rgba(0,0,0,.4)
+	margin-bottom: 16px
+	.current
+		color: lighten($green_good, 10%)
+	li
+		display: inline-block
+		&:after 
+			content: "|"
+			color: #fff
+			font-size: 22px
+			font-weight: 300
+		&:last-child:after
+			content: none
+	a
+		text-decoration: none
+		font-family: raleway-test
+		font-weight: 600
+		position: relative
+		padding-bottom: 10px
+		margin: 0 40px 0 40px
+		font-size: 18px
+		display: inline-block
+		transition: color .2s
+		color: #fff
+		&:hover
+			color: lighten($green_good, 10%) 
+		&:before, &:after
+			content: ""
+			position: absolute
+			height: 2px
+			top: auto
+			right: 50%
+			bottom: 10px
+			left: 50%
+			background: lighten($green_good, 10%)
+			transition: .6s
+		&:hover:before, .current:before 
+			left: 0
+		&:hover:after, .current:after 
+			right: 0
+
+.top-banner
+	.banner-img
+		height: 510px
+		border: 2px solid #2F3847
+		box-shadow: 0 3px 6px rgba(0,0,0,.4)
+	p, span
+		position: absolute
+		z-index: 1
+		color: #fff
+		text-align: center
+		font-weight: 600
+		font-size: 32px
+		line-height: 1.4
+		&.text-banner-1
+			top: 150px
+			left: 700px
+			width: 300px
+		&.text-banner-1-s
+			top: 240px
+			left: 756px
+		&.text-banner-2
+			top: 400px
+			left: 640px
+		&.text-banner-2-s
+			top: 450px
+			left: 800px
+	span
+		color: lighten($green_good, 10%)
+		
+
+
+.menu-catalog
+	list-style: none
+	margin-top: 16px
+	text-align: center
+	background: #2F3847
+	box-shadow: 0 3px 6px rgba(0,0,0,.4)
+	border: 2px solid #fff
+	.fa
+		color: #fff
+		font-size: 2em
+		vertical-align: middle
+	.current
+		color: lighten($green_good, 10%)
+	li
+		display: inline-block
+		&:after 
+			content: "|"
+			color: #fff
+			font-size: 22px
+			font-weight: 300
+		&:last-child:after
+			content: none
+	a
+		text-decoration: none
+		font-family: raleway-test
+		font-weight: 600
+		position: relative
+		padding-bottom: 10px
+		margin: 0 40px 0 40px
+		font-size: 18px
+		display: inline-block
+		transition: color .2s
+		color: #fff
+		&:hover
+			color: lighten($green_good, 10%)
+	ul
+		padding-left: 0px
+		margin-bottom: 0px
+.catalog-position
+	box-shadow: 0 3px 6px rgba(0,0,0,.4)
+	background-color: #fff
+	margin: 16px 12px 16px 12px
+	float: left
+	padding: 16px 8px 16px 8px
+	border-radius: 4px
+	border: 2px solid $graybolder
+	vertical-align: top
+	.button
+		padding: 16px 111px
+	p
+		font-size: 20px
+		span
+			font-family: FiraSans-test
+			font-weight: 600
+	.position-text-color
+		color: $green_good
+
+	.position-text-name
+		p
+			font-size: 19px
+			span
+				font-size: 16px
+	.position-text-cost
+		p
+			font-size: 26px
+.section-galery
+	padding-bottom: 8px
+	border-bottom: 1px solid $graybolder
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import "media" // Всегда в конце
